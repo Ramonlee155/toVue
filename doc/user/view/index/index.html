@@ -1,0 +1,907 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"   {+if $rkey==0+}oncontextmenu="return false"{+/if+}><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>{$topData.title}</title>
+    <link rel="stylesheet" type="text/css" href="../../static/lhc/css/index/main.css"/>
+    <link rel="stylesheet" type="text/css" href="../../static/lhc/css/default/balls.css"/>
+    <link rel="stylesheet" type="text/css" href="../../static/lhc/css/index/notice_popup.css"/>
+    <link rel="stylesheet" type="text/css" href="../../static/lhc/css/index/loading.css"/>
+    <link rel="stylesheet" type="text/css" href="../../static/lhc/css/index/sweetalert.css"/>
+    <link rel="stylesheet" type="text/css" href="../../static/lhc/css/index/lhc.css"/>
+    <script language="javascript" src="../../static/lhc/js/jquery-1.8.3.min.js"></script>
+    <script language="javascript" src="../../static/lhc/js/public.js"></script>
+    <script language="javascript" src="../../static/lhc/js/jquery-ui.min.js"></script>
+    <script language="javascript" src="../../static/lhc/js/jquery.cookie.js"></script>
+    <!--    <script src="/js/default/jsuxj/lhcuser.js?v=1.1" language="javascript"></script>-->
+</head>
+<body class='skin_lhc' style="overflow-y: scroll;">
+<script type="text/javascript" id="myjs">var mulu='{$mulu}';
+var js=1;
+var sss="top";
+window.scrollBy(0, -500);
+</script>
+
+<input type="hidden" class="issixLhcgid" value="{$topData.issixLhcgid ?? 0}"/>
+<!--  顶部内容 -->
+<div id="header" class="header">
+    <div class="logo"><span>{$x_web.webname}</span></div>
+
+    <div class="top">
+        <div class="menu">
+            <div class="menu1">
+                <div id="result_info" class="draw_number" v='611069'><div></div><div></div></div>
+            </div>
+
+            <div class="menu2">
+                <div class="toplink">
+                    <span><a href="javascript:void(0);" class="lib">未结明细</a></span> |
+                    <span><a href="javascript:void(0);" class="baoday">今天已结</a></span> |
+                    <span><a href="javascript:void(0);" class="bao">两周报表</a></span> |
+                    <span><a href="javascript:void(0);" class="longs">开奖结果</a></span> |
+                    <span><a href="javascript:void(0);" class="userinfo">个人资讯</a></span> |
+                    <span><a href="javascript:void(0);" class="changepass2">修改密码</a></span> |
+                    <span><a href="javascript:void(0);" class="rule">游戏规则</a></span> |
+                    <span><a href="{$mulu}Login/logout" class="logout">退出</a></span>
+                </div>
+                <div id="result_balls"  class="T107"></div>
+            </div>
+
+            <div class="menu3"></div>
+            <div style="clear:both;"></div>
+        </div>
+
+        <div class="sub"><div></div></div>
+    </div>
+</div>
+
+<div id="main">
+    {if $topData.cnews>0}
+    {/if}
+    <!-- 左侧列表-->
+
+    <div class="side_left" id="side">
+        <!--用户信息-->
+        <div class="user_info">
+            <div class="title" sy="{$topData.sy}">账户信息 </div>
+
+            <div class="zhanghu">
+                <div class="info"><label>用户账号：</label><span style='width:100px;'>{$topData.username}</span></div>
+                <div class="info" {+if ($topData.cpan==1)+}style='display:none;'{+/if+}><label>盘口：</label>
+                    <span>
+                        <select id = "abcd" class="abcd">
+                            {volist name="$topData.pan" id="vo"}
+                            <OPTION value="{$vo}" {+if ($vo==$topData.defaultpan)+}selected{+/if+}>{$vo}盘</OPTION>
+                            {/volist}
+                        </select>
+                    </span>
+                </div>
+                <div id="account0" class="accounts kedu">
+                    <div class="info" style="display:none;"><label>快开彩额度：</label><span class="kmaxmoney">{$topData.kmaxmoney}</span></div>
+                    <div class="info"><label>快开彩额度：</label><span class="kmoney">{$topData.kmoney}</span></div>
+                    <div class="info"><label>未结算金额：</label><span class="kmoneyuse">{$topData.kmoneyuse}</span></div>
+                </div>
+                <div id="account1" class="accounts dedu" >
+                    <div class="info" ><label>低频彩额度：</label><span class="maxmoney">{$topData.maxmoney}</span></div>
+                    <div class="info"><label>可用余额：</label><span class="money">{$topData.money}</span></div>
+                    <div class="info" style="display:none;" ><label>未结算金额：</label><span class="moneyuse">{$topData.moneyuse}</span></div>
+                </div>
+
+                <div id="account2" class="accounts fedu" >
+                    <div class="info" style="display:none;"><label>额度：</label><span class="fmaxmoney">{$topData.kmaxmoney}</span></div>
+                    <div class="info"><label>快开彩额度：</label><span class="fmoney">{$topData.kmoney}</span></div>
+                    <div class="info" ><label>未结算金额：</label><span class="fmoneyuse">{$topData.kmoneyuse}</span></div>
+                </div>
+
+            </div>
+        </div>
+        <!--下注单信息-->
+        <div  id="lastBets" style="display: none">
+            <table class="table last15">
+                <tbody>
+                <tr><td>时间</td><td>金额</td><td>内容</td></tr>
+                </tbody>
+                <tbody class="list">
+                </tbody>
+            </table>
+
+        </div>
+
+        <!--下注确认-->
+        <div id="betsBox" style="display: none">
+            <div class="ui-dialog-content ui-widget-content" style="width: auto; min-height: 0px; max-height: none; height: auto;">
+                <div class="title" style="text-align: center"><span>下注信息确认</span></div>
+                <div class="betList">
+                    <table class="table">
+                        <thead>
+                        <tr><td colspan="3" >内容</td><td>金额</td></tr>
+                        </thead>
+                        <tbody id="betlist">
+                        </tbody>
+                        <tfoot id="betfoot">
+                        <tr><td colspan="5" style="text-align: right; padding-right:10px ">共 <span id="bcount">0</span> 注， 合计 <span id="btotal">0.0</span></td></tr>
+                        <tr><td colspan="5" class="zt"></td></tr>
+                        </tfoot>
+
+                    </table>
+                </div>
+
+            </div>
+            <div class="ui-dialog-buttonset">
+                <button type="button" class="ui-button qr" ><span class="ui-button-text">确定</span></button>
+                <button type="button" class="ui-button close" role="button"><span class="ui-button-text">取消</span></button>
+            </div>
+        </div>
+
+        <!--快捷下单按钮-->
+        <div id="quick_sec_table" style="display: none">
+            <table class="fasttb" >
+                <thead>
+                <tr ><th colspan="5">特码下注单</th></tr>
+                </thead>
+                <tbody>
+                <tr class='m'><td>01</td><td>11</td><td>21</td><td>31</td><td>41</td></tr>
+                <tr class='m'><td>02</td><td>12</td><td>22</td><td>32</td><td>42</td></tr>
+                <tr class='m'><td>03</td><td>13</td><td>23</td><td>33</td><td>43</td></tr>
+                <tr class='m'><td>04</td><td>14</td><td>24</td><td>34</td><td>44</td></tr>
+                <tr class='m'><td>05</td><td>15</td><td>25</td><td>35</td><td>45</td></tr>
+                <tr class='m'><td>06</td><td>16</td><td>26</td><td>36</td><td>46</td></tr>
+                <tr class='m'><td>07</td><td>17</td><td>27</td><td>37</td><td>47</td></tr>
+                <tr class='m'><td>08</td><td>18</td><td>28</td><td>38</td><td>48</td></tr>
+                <tr class='m'><td>09</td><td>19</td><td>29</td><td>39</td><td>49</td></tr>
+                <tr class='m'><td>10</td><td>20</td><td>30</td><td>40</td><td></td></tr>
+                </tbody>
+            </table>
+            <br>
+            <table class="fasttb" >
+                <tbody>
+                <tr>
+                    <td>單</td>
+                    <td>雙</td>
+                    <td>大</td>
+                    <td>小</td>
+                    <td>前</td>
+                    <td>後</td>
+                </tr>
+                <tr>
+                    <td>鼠</td>
+                    <td>牛</td>
+                    <td>虎</td>
+                    <td>兔</td>
+                    <td>龍</td>
+                    <td>蛇</td>
+                </tr>
+                <tr>
+                    <td>馬</td>
+                    <td>羊</td>
+                    <td>猴</td>
+                    <td>雞</td>
+                    <td>狗</td>
+                    <td>豬</td>
+                </tr>
+                <tr>
+                    <td>合單</td>
+                    <td>合雙</td>
+                    <td>尾大</td>
+                    <td>尾小</td>
+                    <td>家畜</td>
+                    <td>野獸</td>
+                </tr>
+
+                <!--    <tr>-->
+                <!--        <td>内围</td>-->
+                <!--        <td>外围</td>-->
+                <!--        <td>合大</td>-->
+                <!--        <td>合小</td>-->
+                <!--    </tr>-->
+                <tr>
+                    <td>0头</td>
+                    <td>0尾</td>
+                    <td>1头</td>
+                    <td>1尾</td>
+                    <td>2头</td>
+                    <td>2尾</td>
+                </tr>
+                <tr>
+
+                    <td>3头</td>
+                    <td>3尾</td>
+                    <td>4头</td>
+                    <td>4尾</td>
+                    <td>5尾</td>
+                    <td>6尾</td>
+                </tr>
+                <tr>
+                    <td>7尾</td>
+                    <td>8尾</td>
+                    <td>9尾</td>
+                    <td class="red">紅</td>
+                    <td class="blue">藍</td>
+                    <td class="green">綠</td>
+                </tr>
+
+                <tr>
+                    <td class="red">紅單</td>
+                    <td class="red">紅雙</td>
+                    <td class="blue">藍單</td>
+                    <td class="blue">藍雙</td>
+                    <td class="green">綠單</td>
+                    <td class="green">綠雙</td>
+                </tr>
+                <tr>
+                    <td class="red">紅大</td>
+                    <td class="red">紅小</td>
+                    <td class="green">綠大</td>
+                    <td class="green">綠小</td>
+                    <td class="blue">藍大</td>
+                    <td class="blue">藍小</td>
+                </tr>
+                <!--                <tr>-->
+                <!--                    <td>金</td>-->
+                <!--                    <td>木</td>-->
+                <!--                    <td>水</td>-->
+                <!--                    <td>火</td>-->
+                <!--                    <td>土</td>-->
+                <!--                    <td></td>-->
+                <!--                </tr>-->
+
+                <tbody>
+
+                <tr class="kz">
+                    <td colspan="2">全选</td>
+                    <td colspan="2">反选</td>
+                    <td colspan="2">清除</td>
+
+                </tr>
+                <tr class="kz">
+                    <td colspan="6">
+                        <span class="color_lv bold">金额</span> <input class="zje" style="width: 60px;" /></label>
+                        <input type="button" class="exe button" value="确定"  />
+                        <input type="button" class="back button" value="返回"  />
+                        <input type="button" class="button cancel" style="display: none" value="返回"  />
+
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <script type="text/javascript">
+            var sma = new Array();
+
+            {foreach $topData.ma as $k => $item}
+                {foreach $item as $kk => $ii}
+                    sma["{$kk}"] = new Array({$ii});
+                {/foreach}
+            {/foreach}
+
+            // $(".fasttb td").hover(function() {
+            //     $(this).addClass('hover')
+            // }, function() {
+            //     $(this).removeClass('hover')
+            // });
+
+            $(".fasttb tr.m td").each(function(){
+                if(!isNaN($(this).html())){
+                    $(this).css("color",colorm(Number($(this).html())));
+                    $(this).css("font-weight","bold");
+                }
+            });
+
+            $(".fasttb tbody td").click(function() {
+                var val = $(this).html();
+                var zje = $('.zje').val();
+
+                if (val == '') return false;
+
+                var bname = $(window.frames["frame"].document).find(".main a.click").html();
+
+                console.log('bname',bname);
+                var tmp;
+                if (bname == '特碼' | bname == '正碼' | bname == '正特') {
+                    if(!isNaN(val)){
+                        if($(this).hasClass("selected")){
+                            $(window.frames["frame"].document).find(".make input:text").each(function(i) {
+                                console.log('frame---');
+                                var pname = Number($(this).parent().prev().attr('mname'));
+                                console.log('frame---');
+                                console.log('val',val);
+                                console.log('pname',pname);
+                                var pid = $(this).parent().attr("pid");
+                                if(Number(pname)===Number(val)){
+                                    $(window.frames["frame"].document).find(".make td.i" + pid).removeClass("selected");
+                                    $(window.frames["frame"].document).find(".make td.p" + pid).removeClass("selected");
+                                    $(window.frames["frame"].document).find(".make th.m" + pid).removeClass("selected");
+                                    $(window.frames["frame"].document).find(".make td.i" + pid+" input.ba").val('');
+                                    $(window.frames["frame"].document).find(".make td.p" + pid+" input.ba").val('');
+                                    $(window.frames["frame"].document).find(".make th.m" + pid+" input.ba").val('');
+                                }
+                            });
+                            $(this).removeClass('selected');
+                        }else{
+                            $(window.frames["frame"].document).find(".make input:text").each(function(i) {
+                                var pname = Number($(this).parent().prev().attr('mname'));
+                                var pid = $(this).parent().attr("pid");
+                                console.log('val',val);
+                                console.log('pname 289',pname);
+                                if(Number(pname)===Number(val)){
+                                    $(window.frames["frame"].document).find(".make td.i" + pid).addClass("selected");
+                                    $(window.frames["frame"].document).find(".make td.p" + pid).addClass("selected");
+                                    $(window.frames["frame"].document).find(".make th.m" + pid).addClass("selected");
+                                    $(window.frames["frame"].document).find(".make td.i" + pid+" input.ba").val(zje);
+                                    $(window.frames["frame"].document).find(".make td.p" + pid+" input.ba").val(zje);
+                                    $(window.frames["frame"].document).find(".make th.m" + pid+" input.ba").val(zje);
+                                }
+                            });
+                            $(this).addClass('selected');
+                        }
+                    }
+                    else if (val === '反选') {
+                        $(window.frames["frame"].document).find(".make input:text").each(function(i) {
+                            var pname = Number($(this).parent().prev().attr('mname'));
+                            var pid = $(this).parent().attr("pid");
+                            if (i <= 48) {
+                                if ($(this).parent().hasClass("selected")) {
+                                    $(window.frames["frame"].document).find(".make td.i" + pid).removeClass("selected");
+                                    $(window.frames["frame"].document).find(".make td.p" + pid).removeClass("selected");
+                                    $(window.frames["frame"].document).find(".make th.m" + pid).removeClass("selected");
+                                    $(window.frames["frame"].document).find(".make td.i" + pid+" input.ba").val('');
+                                    $(window.frames["frame"].document).find(".make td.p" + pid+" input.ba").val('');
+                                    $(window.frames["frame"].document).find(".make th.m" + pid+" input.ba").val('');
+                                } else {
+                                    $(window.frames["frame"].document).find(".make td.i" + pid).addClass("selected");
+                                    $(window.frames["frame"].document).find(".make td.p" + pid).addClass("selected");
+                                    $(window.frames["frame"].document).find(".make th.m" + pid).addClass("selected");
+                                    $(window.frames["frame"].document).find(".make td.i" + pid+" input.ba").val(zje);
+                                    $(window.frames["frame"].document).find(".make td.p" + pid+" input.ba").val(zje);
+                                    $(window.frames["frame"].document).find(".make th.m" + pid+" input.ba").val(zje);
+                                }
+                            }
+                        });
+                        if($(".kuai1").hasClass("noselected")){
+                            $(".fasttb tr.m td").toggleClass("selected");
+                        }
+                    }
+                    else if (val === '全选') {
+                        $(window.frames["frame"].document).find(".make input:text").each(function(i) {
+                            var pname = Number($(this).parent().prev().attr('mname'));
+                            var pid = $(this).parent().attr("pid");
+                            $(window.frames["frame"].document).find(".make td.i" + pid).addClass("selected");
+                            $(window.frames["frame"].document).find(".make td.p" + pid).addClass("selected");
+                            $(window.frames["frame"].document).find(".make th.m" + pid).addClass("selected");
+                            $(window.frames["frame"].document).find(".make td.i" + pid+" input.ba").val(zje);
+                            $(window.frames["frame"].document).find(".make td.p" + pid+" input.ba").val(zje);
+                            $(window.frames["frame"].document).find(".make th.m" + pid+" input.ba").val(zje);
+                        })
+                        $('.cancel').click();
+                    }
+                    else if (val === '清除' ) {
+                        $(window.frames["frame"].document).find(".cancel:eq(0)").click();
+                        $('.cancel').click();
+                    } else {
+
+                        if( val.length >50) return false;
+                        tmp = sma[val];
+
+                        console.log(tmp , '====');
+                        if ($(this).hasClass('selected')) {
+                            $('#quick_sec_table .m td').each(function (){
+                                var nn = Number($(this).html()) ;
+                                if( $.inArray(nn, tmp) != -1){
+                                    $(this).removeClass("selected");
+                                }
+                            });
+
+                            $(window.frames["frame"].document).find(".make input:text").each(function(i) {
+                                var pname = Number($(this).parent().prev().attr('mname'));
+                                var pid = $(this).parent().attr("pid");
+                                if (i <= 48 & $.inArray(pname, tmp) != -1) {
+                                    $(window.frames["frame"].document).find(".make td.i" + pid).removeClass("selected");
+                                    $(window.frames["frame"].document).find(".make td.p" + pid).removeClass("selected");
+                                    $(window.frames["frame"].document).find(".make th.m" + pid).removeClass("selected");
+                                    console.log('removeClass 361');
+                                    $(window.frames["frame"].document).find(".make td.i" + pid+" input.ba").val('');
+                                    $(window.frames["frame"].document).find(".make td.p" + pid+" input.ba").val('');
+                                    $(window.frames["frame"].document).find(".make th.m" + pid+" input.ba").val('');
+                                }
+
+                            });
+                            $(this).removeClass('selected');
+                        } else {
+                            var flag = true;
+                            $(window.frames["frame"].document).find(".make input:text").each(function(i) {
+                                var pname = Number($(this).parent().prev().attr('mname'));
+                                if (i <= 48 & $.inArray(pname, tmp) != -1 & $(this).parent().hasClass('selected')) {
+                                    flag = false;
+                                }
+                            });
+                            if (!flag) {
+                                $(".cancel:eq(0)").click();
+                            }
+                            $(window.frames["frame"].document).find(".make input:text").each(function(i) {
+                                var pname = Number($(this).parent().prev().attr('mname'));
+                                var pid = $(this).parent().attr("pid");
+                                if (i <= 48 & $.inArray(pname, tmp) != -1) {
+                                    $(window.frames["frame"].document).find(".make td.i" + pid).addClass("selected");
+                                    $(window.frames["frame"].document).find(".make td.p" + pid).addClass("selected");
+                                    $(window.frames["frame"].document).find(".make th.m" + pid).addClass("selected");
+                                    $(window.frames["frame"].document).find(".make td.i" + pid+" input.ba").val(zje);
+                                    $(window.frames["frame"].document).find(".make td.p" + pid+" input.ba").val(zje);
+                                    $(window.frames["frame"].document).find(".make th.m" + pid+" input.ba").val(zje);
+                                }
+
+                            });
+
+                            $(this).addClass('selected');
+                            // $('#quick_sec_table .m td').eq(i)
+
+                            // console.log($('#quick_sec_table .m td').eq(3).addClass("selected"));
+
+                            $('#quick_sec_table .m td').each(function (i){
+                                var nn = Number($(this).html()) ;
+                                if( $.inArray(nn, tmp) != -1){
+                                    $(this).addClass("selected");
+                                }
+                            });
+                        }
+
+                    }
+                }
+                else if (bname === '連碼' | bname === '不中') {
+                    var mode = Number($(".duoexetb a.on").attr('mode'));
+                    if (mode == 1) {
+                        var tb = "duotb"
+                    } else if (mode == 2) {
+                        var tb = "mtr"
+                    } else {
+                        return false
+                    }
+
+                    if (val === '反选') {
+                        $("." + tb + " td.names").each(function(i) {
+                            var pid = $(this).attr("i");
+                            if (i <= 48) {
+                                if ($(this).hasClass("selected")) {
+                                    $("." + tb + " .m" + pid).removeClass("selected");
+                                    $(this).removeClass("selected");
+                                } else {
+                                    $("." + tb + " .m" + pid).addClass("selected");
+                                    $(this).addClass("selected");
+                                }
+                            }
+                        })
+                    } else if (val === '全选') {
+                        $("." + tb + " td.names").each(function(i) {
+                            var pid = $(this).attr("i");
+                            $("." + tb + " .m" + pid).addClass("selected");
+                            $(this).addClass("selected");
+
+                        })
+                    } else if (val === '清除') {
+                        $(window.frames["frame"].document).find(".cancel:eq(0)").click();
+                        $(".fasttb tr td").each(function(){
+                            $(this).removeClass('selected');
+                        });
+                    } else {
+                        tmp = sma[val];
+                        if ($(this).hasClass('selected')) {
+                            $("." + tb + " td.names").each(function(i) {
+                                var pid = $(this).attr("i");
+                                var pname = Number($(this).find("span").html());
+                                if (i <= 48 & $.inArray(pname, tmp) != -1) {
+                                    $("." + tb + " .m" + pid).removeClass("selected");
+                                    $(this).removeClass("selected");
+                                }
+                            });
+                            $(this).removeClass('selected');
+                        } else {
+                            var flag = true;
+                            $("." + tb + " td.names").each(function(i) {
+                                var pname = $(this).find("span").html();
+                                if (i <= 48 & $.inArray(pname, tmp) != -1 & $(this).hasClass('selected')) {
+                                    flag = false;
+                                }
+                            });
+                            if (!flag) {
+                                $(".cancel:eq(0)").click();
+                            }
+                            $("." + tb + " td.names").each(function(i) {
+                                var pid = $(this).attr("i");
+                                var pname = Number($(this).find("span").html());
+                                if (i <= 48 & $.inArray(pname, tmp) != -1) {
+                                    $("." + tb + " .m" + pid).addClass("selected");
+                                    $(this).addClass("selected");
+                                }
+                            });
+                            $(this).addClass('selected');
+                        }
+                    }
+                }
+                $(".zje:eq(0)").focus();
+            });
+            // 文本框输入
+            $(".zje").keyup(function (){
+                console.log($(this).val());
+                $(window.frames["frame"].document).find(".zje").val($(this).val());
+                $(window.frames["frame"].document).find(".zje").click();
+                $(this).focus();
+            });
+
+            $('.cancel').click(function (){
+                $(window.frames["frame"].document).find(".cancel:eq(0)").click();
+                $(".fasttb tr td").each(function(){
+                    $(this).removeClass('selected');
+                });
+                // $(".zje").val('');
+            });
+            $('.exe').click(function (){
+                $(window.frames["frame"].document).find(".exe:eq(0)").click();
+            });
+            //快捷方式 返回
+            $('.back').click(function (){
+                $("#side .user_info").show();
+                $("#side .betdone").show();
+                $("#quick_sec_table").hide();
+            });
+            //下注信息确认取消
+            $('.close').click(function () {
+                $("#side .user_info").show();
+                $("#betsBox").hide();
+                if($(".last15 .list .ml").attr('ml') >0){
+                    $('#lastBets').show();
+                }
+            });
+
+            function colorm(m) {
+                if ($.inArray(m, sma['紅']) != -1) return "red";
+                if ($.inArray(m, sma['藍']) != -1) return "blue";
+                if ($.inArray(m, sma['綠']) != -1) return "green"
+            }
+        </script>
+
+        {if $topData.moneytype===1}
+        <div class="betdone" id="drawOfficial">
+            {if $topData.layer<$topData.maxlayer}
+            <!--<div class="title"><a href="member.php?xtype=myitem" target="frame">我的团队</a></div>-->
+            <!--<div class="title"><a href="member.php?xtype=ad" target="frame">推广链接</a></div>-->
+            <!--<div class="title"><a href="member.php?xtype=tuanbao" target="frame">团队报表</a></div>-->
+            {/if}
+            <!--<div class="title"><a href="member.php?xtype=notices" target="frame">个人中心</a></div>-->
+            <!--<div class="title"><a href="member.php?xtype=zxcz" target="frame">在线充值</a></div>-->
+            <!--<div class="title"><a href="member.php?xtype=zxtk" target="frame">在线提款</a></div>-->
+        </div>
+        {/if}
+
+        <div style="display:none" id="betResultPanel">
+
+            <div class="control s0">
+                <a onclick="resetPanel()" href="javascript:void(0)">返 回</a>
+            </div>
+            <div id="betResultDrawNumber" class="Paneltitle"></div>
+            <div class="bresults">
+                <ul class="bets" id="betReulstList"></ul>
+                <table class="total s0">
+                    <tbody>
+
+                    </tbody></table>
+            </div>
+        </div>
+    </div>
+
+    <div class="frame">
+        <!-- 主体内容  -->
+        <iframe id="frame" name="frame" frameborder="0"></iframe>
+    </div>
+</div>
+
+<!-- 底部信息 -->
+<div id="footer"><div class="info"><marquee id="notices" scrollamount="2" style="
+    color: white;"></marquee></div><a href="javascript:void(0)" class="more">更多</a></div>
+
+<!--{+if $moneytype==1+}
+<div style="position:absolute;width:210px;height:210px;z-index:10" id='sysdiv'><iframe src="wxkf.html" width='100%' height='100%' frameborder="0" scrolling="no"></iframe></div>
+{+/if+}-->
+
+<div class="gamecontainer moregames">
+    <div style="height: 20px;"></div>
+    <div class="gamebox clearfix" style="display:block">
+        {volist name="$topData.gamecs" id="i"}
+        <div class="itemmg"><a href="javascript:void(0)" gid='{$i.gid}'><span>{$i.gname}</span></a>
+            {if in_array($i.gid,$garr)}
+            <div class="delbtn" style="display: block;"></div>
+            {else}
+            <div class="addbtn" style="display: block;"></div>
+            {/if}
+        </div>
+        {/volist}
+
+        <div class="gamesmltxt"></div>
+
+        <div class="editon" style="display: block;">
+            <button class="gamebtn2">关闭</button>
+            <button class="gamebtn1">修改</button>
+        </div>
+        <div class="editoff" style="display: none;">
+            <button class="gamebtn2">取消修改</button>
+            <button class="gamebtn1">保存设置</button>
+        </div>
+    </div>
+</div>
+
+<style type="text/css">
+    .skin_blue .gamecontainer,
+    .skin_blue .new-card-games-container {
+        background-color: #e7e7e7;
+        border: 1px solid #2161b3;
+    }
+    .skin_red .gamecontainer,
+    .skin_red .new-card-games-container {
+        background-color: #e7e7e7;
+        border: 1px solid #6a1f2d;
+    }
+    .skin_gray .gamecontainer,
+    .skin_gray .new-card-games-container {
+        background-color: #e7e7e7;
+        border: 1px solid #c58514;
+    }
+    .gamecontainer {
+        display: none;
+        position: absolute;
+        top: 37px;
+        left: 676px;
+        width: 480px;
+        height: auto;
+        padding: 0 15px 10px 15px;
+    }
+
+
+    .skin_blue  .gamecontainer a {
+        background: none;
+        color: #fff;
+        height: 100%;
+        display: inline-block;
+        height: 38px;
+        line-height: 38px;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .skin_blue  .gamecontainer a {
+        background-color: #2161b3;
+        color: #fff;
+        height: 100%;
+        display: inline-block;
+        height: 38px;
+        line-height: 38px;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .skin_gray  .gamecontainer a {
+        background: none;
+    }
+
+    .skin_gray  .gamecontainer a {
+        background-color: #8c420b;
+    }
+
+    .skin_red  .gamecontainer a {
+        background: none;
+    }
+
+    .skin_red  .gamecontainer a {
+        background-color: #6a1f2d;
+        color: #fff;
+        height: 100%;
+        display: inline-block;
+        height: 38px;
+        line-height: 38px;
+        font-size: 13px;
+        text-align: center;
+
+    }
+
+
+    .skin_blue  .gamecontainer a span {
+        width: 130px;
+        display: block;
+    }
+
+    .skin_blue  .gamecontainer a:hover {
+        background-color: #2161b3;
+        color: #fff;
+    }
+
+    .skin_red  .gamecontainer a span {
+        width: 130px;
+        display: block;
+    }
+
+    .skin_red  .gamecontainer a:hover {
+        background-color: #6a1f2d;
+        color: #fff;
+    }
+
+    .skin_gray  .gamecontainer a span {
+        width: 130px;
+        display: block;
+    }
+
+    .skin_gray  .gamecontainer a:hover {
+        background-color: #8c420b;
+        color: #fff;
+    }
+
+    .skin_gray .gamecontainer {
+        background-color: #f8e8a2;
+        border: 1px solid #c58514;
+    }
+
+    .skin_red .gamecontainer {
+        background-color: #d67a84;
+        border: 1px solid #6a1f2d;
+    }
+    .addbtn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 130px;
+        height: 38px;
+        background-image: url(../imgs/btnadd.png);
+        background-repeat: no-repeat;
+        background-position: 115px 13px;
+        cursor: pointer;
+        display: none;
+    }
+
+    .delbtn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 130px;
+        height: 38px;
+        background-image: url(../imgs/btnremove.png);
+        background-repeat: no-repeat;
+        background-position: 115px 13px;
+        cursor: pointer;
+        display: none;
+    }
+
+    .gamebox .row1 {
+        -min-height: 18px;
+        font-size: 13px;
+        color: #000;
+        margin-bottom: 3px;
+    }
+
+    .gamebox .row1:last-child {
+        margin-bottom: 0;
+    }
+
+    .gamebox .col {
+        width: 33.3%;
+        float: left;
+    }
+
+    .gamebox .col input[type="checkbox" i] {
+        margin-right: 5px;
+    }
+
+    .gamebox, .gamebox2 {
+        padding: 25px 35px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        font-size: 13px;
+        display: none;
+        height: auto;
+        margin-top: 5px;
+        border-top: none;
+    }
+
+    .gamebox .selected span {
+        color: #fff;
+    }
+    .new-card-games-container .gamebox2 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .item,
+    .itemmg {
+        position: relative;
+    }
+
+    .itemmg {
+        width: 130px;
+        height: 38px;
+        float: left;
+        margin: 1px;
+    }
+    .itemmg a {
+        width: 130px;
+    }
+
+    .gamebox .row1 {
+        -min-height: 18px;
+        font-size: 13px;
+        color: #000;
+        margin-bottom: 3px;
+    }
+
+    .gamebox .row1:last-child {
+        margin-bottom: 0;
+    }
+
+    .gamebox .col {
+        width: 33.3%;
+        float: left;
+    }
+
+    .gamebox .col input[type="checkbox" i] {
+        margin-right: 5px;
+    }
+
+    .gamesmltxt {
+        margin-top: 20px;
+        font-size: 12px;
+        color: #333;
+        float: left;
+    }
+
+    .skin_red .gamebtn1 {
+        background-color: #ad394b;
+        border: 1px solid #ad394b;
+    }
+
+    .skin_red .gamebtn2 {
+        background-color: #cccccc;
+        border: 1px solid #999;
+    }
+    .skin_blue .gamebtn1 {
+        background-color: #2161b3;
+        border: 1px solid #2161b3;
+    }
+
+    .skin_blue .gamebtn2 {
+        background-color: #cccccc;
+        border: 1px solid #999;
+    }
+
+    .gamebtn1,
+    .gamebtn2 {
+        float: right;
+        margin-right: 5px;
+        padding: 8px;
+        text-align: center;
+        width: 90px;
+        color: #fff;
+        margin-top: 10px;
+        cursor: pointer;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+    }
+
+    .clearfix:before,
+    .clearfix:after {
+        content: " ";
+        display: table;
+    }
+
+    .clearfix:after {
+        clear: both;
+    }
+
+    /*
+    * For IE 6/7 only
+    * Include this rule to trigger hasLayout and contain floats.
+    */
+
+    .clearfix {
+        *zoom: 1;
+    }
+
+</style>
+
+</body>
+</html>

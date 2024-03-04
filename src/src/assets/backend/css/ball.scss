@@ -1,0 +1,184 @@
+@charset "utf-8";
+/**  =================== 公共的样式 ===================  **/
+
+.last_term {float: right; }
+.last_term .title {display: inline-block ; height: 20px; line-height: 20px;}
+.last_term .name { display: inline-block ; height: 21px;}
+
+.table_pk10 .name .b , #drawInfo .balls .b{
+    background: url("@/assets/backend/images/ball/ball-pk.png") no-repeat;
+    width: 20px;
+    height: 20px;
+    margin: 0 1px;
+    text-indent: -99999px;
+    display: inline-block;
+}
+
+.table_pk10 .name .b1,#drawInfo .balls .b1 {
+    background-position: 0 0;
+}
+
+.table_pk10 .name .b2,#drawInfo .balls .b2 {
+    background-position: 0 -21px;
+}
+
+.table_pk10 .name .b3,#drawInfo .balls .b3 {
+    background-position: 0 -42px;
+}
+
+.table_pk10 .name .b4,#drawInfo .balls .b4 {
+    background-position: 0 -63px;
+}
+
+.table_pk10 .name .b5,#drawInfo .balls .b5 {
+    background-position: 0 -84px;
+}
+
+.table_pk10 .name .b6,#drawInfo .balls .b6 {
+    background-position: 0 -105px;
+}
+
+.table_pk10 .name .b7,#drawInfo .balls .b7 {
+    background-position: 0 -126px;
+}
+
+.table_pk10 .name .b8,#drawInfo .balls .b8 {
+    background-position: 0 -147px;
+}
+
+.table_pk10 .name .b9,#drawInfo .balls .b9 {
+    background-position: 0 -168px;
+}
+
+.table_pk10 .name .b10,#drawInfo .balls .b10 {
+    background-position: 0 -189px;
+}
+.table_pk10 .name .b大 ,.table_pk10 .name .b单 ,.table_pk10 .name .b龙 ,.table_pk10 .he {
+    background: #0873c5; color: #ffffff;font-size:13px;text-indent:0;
+}
+.table_pk10 .name .b小,.table_pk10 .name .b双,.table_pk10 .name .b虎{
+    background: #dfa600; color: #ffffff;font-size:13px;text-indent:0;
+}
+
+
+/** 六合彩 **/
+ .table_lhc .name .b{
+width: 23px;
+height: 23px;
+line-height: 22px;
+text-align: center;
+display: inline-block;
+font-size: 12px;
+color: #fff;
+margin: 2px 0 0 5px;
+text-indent: 0;
+font-weight: bold;
+}
+
+.table_lhc .balls .b01, .table_lhc .name .b1, #drawInfo .lhc-ball .b01 ,.menu2 .T100 .b01 {background: url("@/assets/backend/images/ball/hb.png") no-repeat;background-size:23px 23px;}
+.table_lhc .balls .b02, .table_lhc .name .b2, #drawInfo .lhc-ball .b02 ,.menu2 .T100 .b02 {background: url("@/assets/backend/images/ball/hb.png") no-repeat;background-size:23px 23px;}
+.table_lhc .balls .b03, .table_lhc .name .b3, #drawInfo .lhc-ball .b03 ,.menu2 .T100 .b03 {	background: url("@/assets/backend/images/ball/nb.png") no-repeat ;background-size:23px 23px;}
+.table_lhc .balls .b04, .table_lhc .name .b4, #drawInfo .lhc-ball .b04 ,.menu2 .T100 .b04 {	background: url("@/assets/backend/images/ball/nb.png") no-repeat ;background-size:23px 23px;}
+.table_lhc .balls .b05, .table_lhc .name .b5, #drawInfo .lhc-ball .b05 ,.menu2 .T100 .b05 {	background: url("@/assets/backend/images/ball/lb.png") no-repeat ;background-size:23px 23px;}
+.table_lhc .balls .b06, .table_lhc .name .b6, #drawInfo .lhc-ball .b06 ,.menu2 .T100 .b06 {	background: url("@/assets/backend/images/ball/lb.png") no-repeat ;background-size:23px 23px;}
+.table_lhc .balls .b07, .table_lhc .name .b7, #drawInfo .lhc-ball .b07 ,.menu2 .T100 .b07 {	background: url("@/assets/backend/images/ball/hb.png") no-repeat ;background-size:23px 23px;}
+.table_lhc .balls .b08, .table_lhc .name .b8, #drawInfo .lhc-ball .b08 ,.menu2 .T100 .b08 {	background: url("@/assets/backend/images/ball/hb.png") no-repeat ;background-size:23px 23px;}
+.table_lhc .balls .b09, .table_lhc .name .b9, #drawInfo .lhc-ball .b09 ,.menu2 .T100 .b09 {	background: url("@/assets/backend/images/ball/nb.png") no-repeat ;background-size:23px 23px;}
+
+.table_lhc .balls .b01, .table_lhc .name .b01, #drawInfo .lhc-ball .b01 ,.menu2 .T100 .b01 {background: url("@/assets/backend/images/ball/hb.png") no-repeat;background-size:23px 23px;}
+.table_lhc .balls .b02, .table_lhc .name .b02, #drawInfo .lhc-ball .b02 ,.menu2 .T100 .b02 {background: url("@/assets/backend/images/ball/hb.png") no-repeat;background-size:23px 23px;}
+.table_lhc .balls .b03, .table_lhc .name .b03, #drawInfo .lhc-ball .b03 ,.menu2 .T100 .b03 {	background: url("@/assets/backend/images/ball/nb.png") no-repeat ;background-size:23px 23px;}
+.table_lhc .balls .b04, .table_lhc .name .b04, #drawInfo .lhc-ball .b04 ,.menu2 .T100 .b04 {	background: url("@/assets/backend/images/ball/nb.png") no-repeat ;background-size:23px 23px;}
+.table_lhc .balls .b05, .table_lhc .name .b05, #drawInfo .lhc-ball .b05 ,.menu2 .T100 .b05 {	background: url("@/assets/backend/images/ball/lb.png") no-repeat ;background-size:23px 23px;}
+.table_lhc .balls .b06, .table_lhc .name .b06, #drawInfo .lhc-ball .b06 ,.menu2 .T100 .b06 {	background: url("@/assets/backend/images/ball/lb.png") no-repeat ;background-size:23px 23px;}
+.table_lhc .balls .b07, .table_lhc .name .b07, #drawInfo .lhc-ball .b07 ,.menu2 .T100 .b07 {	background: url("@/assets/backend/images/ball/hb.png") no-repeat ;background-size:23px 23px;}
+.table_lhc .balls .b08, .table_lhc .name .b08, #drawInfo .lhc-ball .b08 ,.menu2 .T100 .b08 {	background: url("@/assets/backend/images/ball/hb.png") no-repeat ;background-size:23px 23px;}
+.table_lhc .balls .b09, .table_lhc .name .b09, #drawInfo .lhc-ball .b09 ,.menu2 .T100 .b09 {	background: url("@/assets/backend/images/ball/nb.png") no-repeat ;background-size:23px 23px;}
+
+.table_lhc .balls .b10, .table_lhc .name .b10, #drawInfo .lhc-ball .b10 ,.menu2 .T100 .b10 {	background: url("@/assets/backend/images/ball/nb.png") no-repeat ;background-size:23px 23px;}
+.table_lhc .balls .b11, .table_lhc .name .b11, #drawInfo .lhc-ball .b11 ,.menu2 .T100 .b11 {	background: url("@/assets/backend/images/ball/lb.png") no-repeat ;background-size:23px 23px;}
+.table_lhc .balls .b12, .table_lhc .name .b12, #drawInfo .lhc-ball .b12 ,.menu2 .T100 .b12 {	background: url("@/assets/backend/images/ball/hb.png") no-repeat ;background-size:23px 23px;}
+.table_lhc .balls .b13, .table_lhc .name .b13, #drawInfo .lhc-ball .b13 ,.menu2 .T100 .b13 {	background: url("@/assets/backend/images/ball/hb.png") no-repeat ;background-size:23px 23px;}
+.table_lhc .balls .b14, .table_lhc .name .b14, #drawInfo .lhc-ball .b14 ,.menu2 .T100 .b14 {	background: url("@/assets/backend/images/ball/nb.png") no-repeat ;background-size:23px 23px;}
+.table_lhc .balls .b15, .table_lhc .name .b15, #drawInfo .lhc-ball .b15 ,.menu2 .T100 .b15 {	background: url("@/assets/backend/images/ball/nb.png") no-repeat ;background-size:23px 23px;}
+.table_lhc .balls .b16, .table_lhc .name .b16, #drawInfo .lhc-ball .b16 ,.menu2 .T100 .b16 {	background: url("@/assets/backend/images/ball/lb.png") no-repeat ;background-size:23px 23px;}
+.table_lhc .balls .b17, .table_lhc .name .b17, #drawInfo .lhc-ball .b17 ,.menu2 .T100 .b17 {	background: url("@/assets/backend/images/ball/lb.png") no-repeat ;background-size:23px 23px;}
+.table_lhc .balls .b18, .table_lhc .name .b18, #drawInfo .lhc-ball .b18 ,.menu2 .T100 .b18 {	background: url("@/assets/backend/images/ball/hb.png") no-repeat ;background-size:23px 23px;}
+.table_lhc .balls .b19, .table_lhc .name .b19, #drawInfo .lhc-ball .b19 ,.menu2 .T100 .b19 {	background: url("@/assets/backend/images/ball/hb.png") no-repeat ;background-size:23px 23px;}
+.table_lhc .balls .b20, .table_lhc .name .b20, #drawInfo .lhc-ball .b20 ,.menu2 .T100 .b20 {	background: url("@/assets/backend/images/ball/nb.png") no-repeat ;background-size:23px 23px;}
+.table_lhc .balls .b21, .table_lhc .name .b21, #drawInfo .lhc-ball .b21 ,.menu2 .T100 .b21 {	background: url("@/assets/backend/images/ball/lb.png") no-repeat ;background-size:23px 23px;}
+.table_lhc .balls .b22, .table_lhc .name .b22, #drawInfo .lhc-ball .b22 ,.menu2 .T100 .b22 {	background: url("@/assets/backend/images/ball/lb.png") no-repeat ;background-size:23px 23px;}
+.table_lhc .balls .b23, .table_lhc .name .b23, #drawInfo .lhc-ball .b23 ,.menu2 .T100 .b23 {	background: url("@/assets/backend/images/ball/hb.png") no-repeat ;background-size:23px 23px;}
+.table_lhc .balls .b24, .table_lhc .name .b24, #drawInfo .lhc-ball .b24 ,.menu2 .T100 .b24 {	background: url("@/assets/backend/images/ball/hb.png") no-repeat ;background-size:23px 23px;}
+.table_lhc .balls .b25, .table_lhc .name .b25, #drawInfo .lhc-ball .b25 ,.menu2 .T100 .b25 {	background: url("@/assets/backend/images/ball/nb.png") no-repeat ;background-size:23px 23px;}
+.table_lhc .balls .b26, .table_lhc .name .b26, #drawInfo .lhc-ball .b26 ,.menu2 .T100 .b26 {	background: url("@/assets/backend/images/ball/nb.png") no-repeat ;background-size:23px 23px;}
+.table_lhc .balls .b27, .table_lhc .name .b27, #drawInfo .lhc-ball .b27 ,.menu2 .T100 .b27 {	background: url("@/assets/backend/images/ball/lb.png") no-repeat ;background-size:23px 23px;}
+.table_lhc .balls .b28, .table_lhc .name .b28, #drawInfo .lhc-ball .b28 ,.menu2 .T100 .b28 {	background: url("@/assets/backend/images/ball/lb.png") no-repeat ;background-size:23px 23px;}
+.table_lhc .balls .b29, .table_lhc .name .b29, #drawInfo .lhc-ball .b29 ,.menu2 .T100 .b29 {	background: url("@/assets/backend/images/ball/hb.png") no-repeat ;background-size:23px 23px;}
+.table_lhc .balls .b30, .table_lhc .name .b30, #drawInfo .lhc-ball .b30 ,.menu2 .T100 .b30 {	background: url("@/assets/backend/images/ball/hb.png") no-repeat ;background-size:23px 23px;}
+.table_lhc .balls .b31, .table_lhc .name .b31, #drawInfo .lhc-ball .b31 ,.menu2 .T100 .b31 {	background: url("@/assets/backend/images/ball/nb.png") no-repeat ;background-size:23px 23px;}
+.table_lhc .balls .b32, .table_lhc .name .b32, #drawInfo .lhc-ball .b32 ,.menu2 .T100 .b32 {	background: url("@/assets/backend/images/ball/lb.png") no-repeat ;background-size:23px 23px;}
+.table_lhc .balls .b33, .table_lhc .name .b33, #drawInfo .lhc-ball .b33 ,.menu2 .T100 .b33 {	background: url("@/assets/backend/images/ball/lb.png") no-repeat ;background-size:23px 23px;}
+.table_lhc .balls .b34, .table_lhc .name .b34, #drawInfo .lhc-ball .b34 ,.menu2 .T100 .b34 {	background: url("@/assets/backend/images/ball/hb.png") no-repeat ;background-size:23px 23px;}
+.table_lhc .balls .b35, .table_lhc .name .b35, #drawInfo .lhc-ball .b35 ,.menu2 .T100 .b35 {	background: url("@/assets/backend/images/ball/hb.png") no-repeat ;background-size:23px 23px;}
+.table_lhc .balls .b36, .table_lhc .name .b36, #drawInfo .lhc-ball .b36 ,.menu2 .T100 .b36 {	background: url("@/assets/backend/images/ball/nb.png") no-repeat ;background-size:23px 23px;}
+.table_lhc .balls .b37, .table_lhc .name .b37, #drawInfo .lhc-ball .b37 ,.menu2 .T100 .b37 {	background: url("@/assets/backend/images/ball/nb.png") no-repeat ;background-size:23px 23px;}
+.table_lhc .balls .b38, .table_lhc .name .b38, #drawInfo .lhc-ball .b38 ,.menu2 .T100 .b38 {	background: url("@/assets/backend/images/ball/lb.png") no-repeat ;background-size:23px 23px;}
+.table_lhc .balls .b39, .table_lhc .name .b39, #drawInfo .lhc-ball .b39 ,.menu2 .T100 .b39 {	background: url("@/assets/backend/images/ball/lb.png") no-repeat ;background-size:23px 23px;}
+.table_lhc .balls .b40, .table_lhc .name .b40, #drawInfo .lhc-ball .b40 ,.menu2 .T100 .b40 {	background: url("@/assets/backend/images/ball/hb.png") no-repeat ;background-size:23px 23px;}
+.table_lhc .balls .b41, .table_lhc .name .b41, #drawInfo .lhc-ball .b41 ,.menu2 .T100 .b41 {	background: url("@/assets/backend/images/ball/nb.png") no-repeat ;background-size:23px 23px;}
+.table_lhc .balls .b42, .table_lhc .name .b42, #drawInfo .lhc-ball .b42 ,.menu2 .T100 .b42 {	background: url("@/assets/backend/images/ball/nb.png") no-repeat ;background-size:23px 23px;}
+.table_lhc .balls .b43, .table_lhc .name .b43, #drawInfo .lhc-ball .b43 ,.menu2 .T100 .b43 {	background: url("@/assets/backend/images/ball/lb.png") no-repeat ;background-size:23px 23px;}
+.table_lhc .balls .b44, .table_lhc .name .b44, #drawInfo .lhc-ball .b44 ,.menu2 .T100 .b44 {	background: url("@/assets/backend/images/ball/lb.png") no-repeat ;background-size:23px 23px;}
+.table_lhc .balls .b45, .table_lhc .name .b45, #drawInfo .lhc-ball .b45 ,.menu2 .T100 .b45 {	background: url("@/assets/backend/images/ball/hb.png") no-repeat ;background-size:23px 23px;}
+.table_lhc .balls .b46, .table_lhc .name .b46, #drawInfo .lhc-ball .b46 ,.menu2 .T100 .b46 {	background: url("@/assets/backend/images/ball/hb.png") no-repeat ;background-size:23px 23px;}
+.table_lhc .balls .b47, .table_lhc .name .b47, #drawInfo .lhc-ball .b47 ,.menu2 .T100 .b47 {	background: url("@/assets/backend/images/ball/nb.png") no-repeat ;background-size:23px 23px;}
+.table_lhc .balls .b48, .table_lhc .name .b48, #drawInfo .lhc-ball .b48 ,.menu2 .T100 .b48 {	background: url("@/assets/backend/images/ball/nb.png") no-repeat ;background-size:23px 23px;}
+.table_lhc .balls .b49, .table_lhc .name .b49, #drawInfo .lhc-ball .b49 ,.menu2 .T100 .b49 {	background: url("@/assets/backend/images/ball/lb.png") no-repeat ;background-size:23px 23px;}
+
+.table_ssc .name {
+   position: relative; top: -5px;
+}
+.table_ssc .name .b{
+    margin-left:2px;margin-top: 3px;background: url("@/assets/backend/images/ball/ball_2.png") no-repeat;
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    text-indent: -99999px;
+    margin: 0px;
+    margin-top: 1px;
+}
+.table_ssc .name .b0 {	background-position: 0 0;}
+.table_ssc .name .b1 {	background-position: 0 -27px;}
+.table_ssc .name .b2 {	background-position: 0 -54px;}
+.table_ssc .name .b3 {	background-position: 0 -81px;}
+.table_ssc .name .b4 {	background-position: 0 -108px;}
+.table_ssc .name .b5 {	background-position: 0 -135px;}
+.table_ssc .name .b6 {	background-position: 0 -162px;}
+.table_ssc .name .b7 {	background-position: 0 -189px;}
+.table_ssc .name .b8 {	background-position: 0 -216px;}
+.table_ssc .name .b9 {	background-position: 0 -243px;}
+
+
+.table_pc28 .name {
+    position: relative; top: -5px;
+}
+.table_pc28 .name .b{
+    margin-top: 3px; background: url("@/assets/backend/images/ball/ball_grey.png") no-repeat;
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    text-indent: -99999px;
+    margin: 0px;
+    margin-top: 1px;
+}
+.table_pc28 .name .b0 {	background-position: 0 0;}
+.table_pc28 .name .b1 {	background-position: 0 -27px;}
+.table_pc28 .name .b2 {	background-position: 0 -54px;}
+.table_pc28 .name .b3 {	background-position: 0 -81px;}
+.table_pc28 .name .b4 {	background-position: 0 -108px;}
+.table_pc28 .name .b5 {	background-position: 0 -135px;}
+.table_pc28 .name .b6 {	background-position: 0 -162px;}
+.table_pc28 .name .b7 {	background-position: 0 -189px;}
+.table_pc28 .name .b8 {	background-position: 0 -216px;}
+.table_pc28 .name .b9 {	background-position: 0 -243px;}
