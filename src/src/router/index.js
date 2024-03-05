@@ -27,53 +27,67 @@ const commonRoutes = [
           },
           component: () => import('@/views/login/index.vue'),
         },
+        {
+
+          path: '/login/logon',
+          name: 'logon',
+          meta: {
+              title: '登录页1'
+          },
+          component: () => import('@/views/login/logon.vue'),
+        },
+        {
+
+          path: '/login/register',
+          name: 'register',
+          meta: {
+              title: '注册'
+          },
+          component: () => import('@/views/login/register.vue'),
+        },
+
       ],
   },
   {
-    path: '/logon',
-    component: () => import('@/views/layout/layout.vue'),
-    children:[
-      {
-
-        path: '/login/logon',
-        name: 'logon',
-        meta: {
-            title: '登录页1'
-        },
-        component: () => import('@/views/login/logon.vue'),
-      },
-    ],
+    path: '/home',
+    name: 'home',
+    meta: {
+        title: '首页'
+    },
+    component: () => import('@/views/home/index.vue'),
 },
 {
-  path: '/register',
-  component: () => import('@/views/layout/layout.vue'),
-  children:[
-    {
-
-      path: '/login/register',
-      name: 'register',
-      meta: {
-          title: '注册'
-      },
-      component: () => import('@/views/login/register.vue'),
-    },
-  ],
-},
-    {
-      path: '/',
-      component: () => import('@/views/layout/layoutUser.vue'),
-      children:[
-        {
-
-          path: '/home',
-          name: 'home',
-          meta: {
-              title: '首页'
-          },
-          component: () => import('@/views/home/index.vue'),
-        },
-      ],
+  path: '/long',
+  name: 'long',
+  meta: {
+      title: 'long'
   },
+  component: () => import('@/views/home/long.vue'),
+},
+{
+  path: '/longl',
+  name: 'longl',
+  meta: {
+      title: 'longl'
+  },
+  component: () => import('@/views/home/longl.vue'),
+},
+{
+  path: '/longr',
+  name: 'longr',
+  meta: {
+      title: 'longr'
+  },
+  component: () => import('@/views/home/longr.vue'),
+},
+{
+  path: '/longs',
+  name: 'longs',
+  meta: {
+      title: 'longs'
+  },
+  component: () => import('@/views/home/longs.vue'),
+},
     {
         path: '/error',
         name: 'error',

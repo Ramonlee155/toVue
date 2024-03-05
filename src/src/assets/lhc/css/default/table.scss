@@ -51,7 +51,7 @@ body {
 .table thead th, .table .head th {
 	height: 24px;
 	line-height: 24px;
-	background: #FFBDB9 url(./img/red/table_headerbg.gif) repeat-x left top;
+	background: #FFBDB9 url('@/assets/lhc/css/default/img/red/table_headerbg.gif') repeat-x left top;
 	color: #762d08;
 	font-weight: bold;
 	height: 28px;
@@ -138,7 +138,7 @@ body {
 }
 
 .control .button {
-	background: url("./img/red/btn-bg.png") repeat-x;
+	background: url("@/assets/lhc/css/default/img/red/btn-bg.png") repeat-x;
 	border: none;
 	width: 66px;
 	height: 18px;
@@ -149,11 +149,11 @@ body {
 }
 
 .skin_blue .control .button {
-	background: url("./img/blue/btn-bg.png") repeat-x;
+	background: url("@/assets/lhc/css/default/img/blue/btn-bg.png") repeat-x;
 }
 
 .skin_gray .control .button {
-	background: url("./img/gray/btn-bg.png") repeat-x;
+	background: url("@/assets/lhc/css/default/img/gray/btn-bg.png") repeat-x;
 }
 
 .control .button_hover, .control .button:hover {
@@ -230,11 +230,11 @@ a {
 }
 
 .game_class ul {
-	background: url(./img/red/game_classbg.png) repeat-x;
+	background: url('@/assets/lhc/css/default/img/red/game_classbg.png') repeat-x;
 }
 
 .game_class li {
-	background: url(./img/red/game_classbg.png) no-repeat left -128px;
+	background: url('@/assets/lhc/css/default/img/red/game_classbg.png') no-repeat left -128px;
 	padding: 0 0 0 60px;
 }
 
@@ -257,7 +257,7 @@ a {
 	font-size: 12px;
 	color: #535353;
 	line-height: 28px;
-	background: url(./img/red/game_classbg.png) no-repeat left -319px;
+	background: url('@/assets/lhc/css/default/img/red/game_classbg.png') no-repeat left -319px;
 	text-align: center;
 	text-shadow: 1px 1px 0 #eeeeee;
 	margin: 4px 4px 0 0;
@@ -266,7 +266,7 @@ a {
 
 .game_class a:hover, .game_class a.selected {
 	color: white;
-	background: url(./img/red/game_classbg.png) no-repeat left -291px;
+	background: url('@/assets/lhc/css/default/img/red/game_classbg.png') no-repeat left -291px;
 	text-shadow: 1px 1px 0 #ad3b4e;
 }
 
@@ -304,7 +304,7 @@ a {
 
 /*===================================== skin_blue ===============================================*/
 .skin_blue .table thead th, .skin_blue .table .head th {
-	background: #c5e5f4 url("./img/blue/table_headerbg.gif") repeat-x left top;
+	background: #c5e5f4 url("@/assets/lhc/css/default/img/blue/table_headerbg.gif") repeat-x left top;
 	color: #35406d;
 }
 
@@ -327,11 +327,11 @@ a {
 }
 
 .skin_blue .game_class ul {
-	background: url(./img/blue/game_classbg.png) repeat-x;
+	background: url('@/assets/lhc/css/default/img/blue/game_classbg.png') repeat-x;
 }
 
 .skin_blue .game_class li {
-	background: url(./img/blue/game_classbg.png) no-repeat left -128px;
+	background: url('@/assets/lhc/css/default/img/blue/game_classbg.png') no-repeat left -128px;
 	padding: 0 0 0 60px;
 }
 
@@ -354,7 +354,7 @@ a {
 	font-size: 12px;
 	color: #535353;
 	line-height: 28px;
-	background: url(./img/blue/game_classbg.png) no-repeat left -319px;
+	background: url('@/assets/lhc/css/default/img/blue/game_classbg.png') no-repeat left -319px;
 	text-align: center;
 	text-shadow: 1px 1px 0 #eeeeee;
 	margin: 4px 4px 0 0;
@@ -363,7 +363,7 @@ a {
 
 .skin_blue .game_class a:hover, .skin_blue .game_class a.selected {
 	color: white;
-	background: url(./img/blue/game_classbg.png) no-repeat left -291px;
+	background: url('@/assets/lhc/css/default/img/blue/game_classbg.png') no-repeat left -291px;
 	text-shadow: 1px 1px 0 #386BAD;
 }
 
@@ -378,7 +378,7 @@ a {
 
 /*===================================== skin_gray ===============================================*/
 .skin_gray .table thead th, .skin_gray .table .head th {
-	background: #B2B4B5 url("./img/gray/table_headerbg.png") repeat-x left top;
+	background: #B2B4B5 url("@/assets/lhc/css/default/img/gray/table_headerbg.png") repeat-x left top;
 	color: #fff;
 }
 
@@ -401,11 +401,11 @@ a {
 }
 
 .skin_gray .game_class ul {
-	background: url(./img/gray/game_classbg.png) repeat-x;
+	background: url('@/assets/lhc/css/default/img/gray/game_classbg.png') repeat-x;
 }
 
 .skin_gray .game_class li {
-	background: url(./img/gray/game_classbg.png) no-repeat left -128px;
+	background: url('@/assets/lhc/css/default/img/gray/game_classbg.png') no-repeat left -128px;
 	padding: 0 0 0 60px;
 }
 
@@ -428,7 +428,7 @@ a {
 	font-size: 12px;
 	color: #535353;
 	line-height: 28px;
-	background: url(./img/gray/game_classbg.png) no-repeat left -319px;
+	background: url('@/assets/lhc/css/default/img/gray/game_classbg.png') no-repeat left -319px;
 	text-align: center;
 	text-shadow: 1px 1px 0 #eeeeee;
 	margin: 4px 4px 0 0;
@@ -437,7 +437,7 @@ a {
 
 .skin_gray .game_class a:hover, .skin_gray .game_class a.selected {
 	color: white;
-	background: url(./img/gray/game_classbg.png) no-repeat left -291px;
+	background: url('@/assets/lhc/css/default/img/gray/game_classbg.png') no-repeat left -291px;
 	text-shadow: 1px 1px 0 #000000;
 }
 
@@ -453,6 +453,6 @@ a {
 
 
 .skin_lhc .table thead th, .skin_lhc .table .head th {
-	background: url(/images/th_bg.gif) repeat-x left top;
+	background: url('@/assets/lhc/images/th_bg.gif') repeat-x left top;
 	color: #1b4075;
 }

@@ -14,7 +14,7 @@ body,.skin_blue,.skin_blue #main {
 .skin_lhc .lottery_body { width: 90%}
 .skin_lhc .top .menu {
     height: 74px;
-    background: url(../../images/top_mid.gif) repeat-x left top;
+    background: url('@/assets/lhc/images/top_mid.gif') repeat-x left top;
     width: 100%;
 }
 .skin_lhc .header .menu1{
@@ -66,7 +66,7 @@ body,.skin_blue,.skin_blue #main {
 }
 
 .skin_lhc .side_left .title {
-    background: url(../../images/th_bg.gif) repeat-x left top;
+    background: url('@/assets/lhc/images/th_bg.gif') repeat-x left top;
     width: 100%;
     width: 232px;
     border: 1px solid #dac89f;
@@ -163,7 +163,7 @@ body,.skin_blue,.skin_blue #main {
 }
 
 #footer {
-    background: url(../../images/m_bot_bg01.gif) repeat-x left top;
+    background: url('@/assets/lhc/images/m_bot_bg01.gif') repeat-x left top;
     border-left: 1px solid #dec2b2;
     border-bottom: 1px solid #dec2b2;
     text-align: center;
@@ -178,7 +178,7 @@ body,.skin_blue,.skin_blue #main {
 }
 
 .skin_lhc table thead th, .skin_lhc table .head th {
-    background: url(../../images/th_bg.gif) repeat-x left top;
+    background: url('@/assets/lhc/images/th_bg.gif') repeat-x left top;
     border: 1px solid #dac89f;
     color: #1b4075;
 
@@ -186,7 +186,7 @@ body,.skin_blue,.skin_blue #main {
     height: 28px;
 }
 .skin_blue .lottery_info {
-    background: url(../../images/th_bg.gif) repeat-x left top;
+    background: url('@/assets/lhc/images/th_bg.gif') repeat-x left top;
     border: 1px solid #dac89f;
     height: 30px;
     -webkit-box-sizing: border-box;
@@ -473,7 +473,7 @@ body,.skin_blue,.skin_blue #main {
 }
 
 .skin_lhc .quick_table{
-    background: url(../../images/m_bot_bg.gif) repeat-x left bottom;
+    background: url('@/assets/lhc/images/m_bot_bg.gif') repeat-x left bottom;
     border: 1px solid #dec2b2;
 }
 

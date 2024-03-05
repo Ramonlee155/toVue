@@ -1,4 +1,3 @@
-@CHARSET "UTF-8";
 
 html {
 	*overflow: hidden;
@@ -40,7 +39,7 @@ table td,table th {
 #main {
 	top: 135px;
 	bottom: 27px;
-	background: #b44249 url("./images/red/side_bg.jpg") no-repeat left
+	background: #b44249 url("@/assets/lhc/css/index/images/red/side_bg.jpg") no-repeat left
 		bottom;
 	min-width: 1155px;
 }
@@ -53,7 +52,7 @@ table td,table th {
 }
 
 .frame {
-	background: url("./images/red/main_con_bg.png") repeat 0 0 #000;
+	background: url("@/assets/lhc/css/index/images/red/main_con_bg.png") repeat 0 0 #000;
 	left: 190px;
 	width: auto;
 }
@@ -142,7 +141,7 @@ a,a:hover {
 	height: 25px;
 	box-sizing: border-box;
 	padding-left: 17px;
-	background-image: url(./images/logout-icon.png);
+	background-image: url('@/assets/lhc/css/index/images/logout-icon.png');
 	background-size: 15px 14px;
 	background-position: 12px 6px;
 	background-repeat: no-repeat;
@@ -275,7 +274,7 @@ a,a:hover {
 	display: block;
 	width: 117px;
 	height: 40px;
-	background: url(./images/red/nav_shuxian.png) no-repeat right 12px;
+	background: url('@/assets/lhc/css/index/images/red/nav_shuxian.png') no-repeat right 12px;
 }
 
 .more_game {
@@ -297,7 +296,7 @@ a,a:hover {
 }
 
 .header .lotterys .setting {
-	background: url("./images/setting.png") no-repeat 8px 9px;
+	background: url("@/assets/lhc/css/index/images/setting.png") no-repeat 8px 9px;
 	padding-left: 35px;
 	cursor: pointer;
 	color: rgb(252, 247, 247);
@@ -537,7 +536,7 @@ a,a:hover {
 }
 
 .side_left .control a {
-	background: url("./images/red/btn-bg.png") repeat-x;
+	background: url("@/assets/lhc/css/index/images/red/btn-bg.png") repeat-x;
 	width: 66px;
 	height: 18px;
 	line-height: 18px;
@@ -564,7 +563,7 @@ a,a:hover {
 
 
 .skin_blue .side_left .control a {
-	background: url("./images/blue/btn-bg.png") repeat-x;
+	background: url("@/assets/lhc/css/index/images/blue/btn-bg.png") repeat-x;
 }
 
 .side_left p {
@@ -681,7 +680,7 @@ a,a:hover {
 }
 
 #lastBets .title a {
-	background: url("./images/blue/btn.png") no-repeat 0 0;
+	background: url("@/assets/lhc/css/index/images/blue/btn.png") no-repeat 0 0;
 	position: relative;
 	display: block;
 	width: 37px;
@@ -917,7 +916,7 @@ a,a:hover {
 }
 
 .skin_gray .table thead th {
-	background: #c5e5f4 url("./images/gray/table_headerbg.png") repeat-x
+	background: #c5e5f4 url("@/assets/lhc/css/index/images/gray/table_headerbg.png") repeat-x
 		left top;
 	color: #fff;
 }
@@ -1037,7 +1036,7 @@ a,a:hover {
 }
 
 .skin_red {
-	background: url("./images/red/main_bg.jpg") no-repeat 0 0 #A12F37;
+	background: url("@/assets/lhc/css/index/images/red/main_bg.jpg") no-repeat 0 0 #A12F37;
 }
 
 .skin_red .ui-dialog {
@@ -1045,11 +1044,11 @@ a,a:hover {
 }
 
 .skin_red .ui-dialog-titlebar {
-	background: url("./images/red/openwinbg.png") repeat-x top;
+	background: url("@/assets/lhc/css/index/images/red/openwinbg.png") repeat-x top;
 }
 
 .skin_red .ui-dialog-icon,.skin_red .ui-dialog-titlebar-close {
-	background-image: url("./images/red/btn.png");
+	background-image: url("@/assets/lhc/css/index/images/red/btn.png");
 }
 
 .skin_red .ui-dialog-content {
@@ -1073,7 +1072,8 @@ a,a:hover {
 }
 
 .skin_red #betResultPanel .title {
-	background: url("./images/red/th_bg.png") repeat-x 0 -100px;
+	// 图片丢失
+	// background: url("@/assets/lhc/css/index/images/red/th_bg.png") repeat-x 0 -100px;
 	color: #F5F6F8;
 	border-color: #E6B3BE;
 	background-color: #E6B3BE;
@@ -1131,7 +1131,7 @@ a,a:hover {
 }
 
 .skin_blue #main {
-	background: #2f6ed7 url("./images/blue/side_bg.jpg") no-repeat left top;
+	background: #2f6ed7 url("@/assets/lhc/css/index/images/blue/side_bg.jpg") no-repeat left top;
 }
 
 .skin_blue #side {
@@ -1142,7 +1142,7 @@ a,a:hover {
 }
 
 .skin_blue .frame {
-	background: url("./images/blue/main_con_bg.png") repeat 0 0 #000;
+	background: url("@/assets/lhc/css/index/images/blue/main_con_bg.png") repeat 0 0 #000;
 }
 
 .skin_blue #header {
@@ -1185,7 +1185,7 @@ a,a:hover {
 
 .skin_blue .header .lotterys a span {
 	width: 117px;
-	background: url(./images/blue/nav_shuxian.png) no-repeat right 12px;
+	background: url('@/assets/lhc/css/index/images/blue/nav_shuxian.png') no-repeat right 12px;
 }
 
 .skin_blue .more_game {
@@ -1288,7 +1288,7 @@ a,a:hover {
 }
 
 .skin_blue {
-	background: url("./images/blue/main_bg.jpg") no-repeat 0 0 #3682D0;
+	background: url("@/assets/lhc/css/index/images/blue/main_bg.jpg") no-repeat 0 0 #3682D0;
 }
 
 .skin_blue .ui-dialog {
@@ -1308,11 +1308,11 @@ a,a:hover {
 }
 
 .skin_blue .ui-dialog-titlebar {
-	background: url("./images/blue/openwinbg.png") repeat-x top;
+	background: url("@/assets/lhc/css/index/images/blue/openwinbg.png") repeat-x top;
 }
 
 .skin_blue .ui-dialog-icon,.skin_blue .ui-dialog-titlebar-close {
-	background-image: url("./images/blue/btn.png");
+	background-image: url("@/assets/lhc/css/index/images/blue/btn.png");
 }
 
 .skin_blue .ui-dialog-content {
@@ -1326,7 +1326,7 @@ a,a:hover {
 }
 
 .skin_blue #betResultPanel .Paneltitle {
-	background: url("./images/blue/th_bg.png") repeat-x 0 -100px;
+	background: url("@/assets/lhc/css/index/images/blue/th_bg.png") repeat-x 0 -100px;
 	color: #F5F6F8;
 	border-color: #88ABDA;
 	background-color: #88ABDA;
@@ -1355,7 +1355,7 @@ a,a:hover {
 }
 
 .skin_gray #main {
-	background: #c0c0c0 url("./images/gray/side_bg.jpg") no-repeat left top;
+	background: #c0c0c0 url("@/assets/lhc/css/index/images/gray/side_bg.jpg") no-repeat left top;
 }
 
 .skin_gray #side {
@@ -1369,7 +1369,7 @@ a,a:hover {
 }
 
 .skin_gray .frame {
-	background: url("./images/gray/main_con_bg.png") repeat 0 0 #000;
+	background: url("@/assets/lhc/css/index/images/gray/main_con_bg.png") repeat 0 0 #000;
 }
 
 .skin_gray #header {
@@ -1408,7 +1408,7 @@ a,a:hover {
 
 .skin_gray .header .lotterys a span {
 	width: 117px;
-	background: url(./images/gray/nav_shuxian.png) no-repeat right 12px;
+	background: url('@/assets/lhc/css/index/images/gray/nav_shuxian.png') no-repeat right 12px;
 }
 
 .skin_gray .more_game {
@@ -1477,7 +1477,7 @@ a,a:hover {
 }
 
 .skin_gray #footer {
-	background: url("./images/marquebg.png") repeat-x;
+	background: url("@/assets/lhc/css/index/images/marquebg.png") repeat-x;
 	border-bottom: 1px solid #9B9BA2;
 	border-top: 1px solid #9B9BA2;
 	line-height: 27px;
@@ -1514,11 +1514,13 @@ a,a:hover {
 }
 
 .skin_gray .ui-dialog-titlebar {
-	background: url("./images/gray/openwinbg.png") repeat-x top;
+	//图片丢失
+	// background: url("@/assets/lhc/css/index/images/gray/openwinbg.png") repeat-x top;
+	
 }
 
 .skin_gray .ui-dialog-icon,.skin_gray .ui-dialog-titlebar-close {
-	background-image: url("./images/gray/btn.png");
+	background-image: url("@/assets/lhc/css/index/images/gray/btn.png");
 }
 
 .skin_gray .ui-dialog-content {
@@ -1526,11 +1528,12 @@ a,a:hover {
 }
 
 .skin_gray .ui-dialog-buttonset .ui-button {
-	background-image: url("./images/gray/btn-bg.png");
+	background-image: url("@/assets/lhc/css/index/images/gray/btn-bg.png");
 }
 
 .skin_gray #betResultPanel .Paneltitle {
-	background: url("./images/gray/th_bg.png") repeat-x 0 -100px;
+	//图片丢失
+	// background: url("@/assets/lhc/css/index/images/gray/th_bg.png") repeat-x 0 -100px;
 	color: #fff;
 	border-color: #818181;
 	background-color: #818181;
@@ -1542,11 +1545,11 @@ a,a:hover {
 }
 
 .skin_gray .header .menu3 a {
-	background-image: url("./images/gray/logout.png");
+	background-image: url("@/assets/lhc/css/index/images/gray/logout.png");
 }
 
 .skin_gray .header .menu3 a:hover {
-	background-image: url("./images/gray/logout_rollover.png");
+	background-image: url("@/assets/lhc/css/index/images/gray/logout_rollover.png");
 }
 
 .skin_gray #lastBets li {
@@ -1641,7 +1644,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b8ac7', end
 
 .skin_0ange .header .lotterys a span {
 	width: 117px;
-	background: url(./images/red/nav_shuxian.png) no-repeat right 12px;
+	background: url('@/assets/lhc/css/index/images/red/nav_shuxian.png') no-repeat right 12px;
 }
 
 .skin_0ange .more_game {
@@ -1768,7 +1771,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b8ac7', end
 }
 
 .skin_0ange .ui-dialog-icon,.skin_0ange .ui-dialog-titlebar-close {
-	background-image: url("./images/blue/btn.png");
+	background-image: url("@/assets/lhc/css/index/images/blue/btn.png");
 }
 
 .skin_0ange .ui-dialog-content {
@@ -1782,7 +1785,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b8ac7', end
 }
 
 .skin_0ange #betResultPanel .Paneltitle {
-	background: url("./images/blue/th_bg.png") repeat-x 0 -100px;
+	background: url("@/assets/lhc/css/index/images/blue/th_bg.png") repeat-x 0 -100px;
 	color: rgba(255, 182, 91, 0.2);
 	border-color: rgba(255, 182, 91, 0.2);
 	background-color: rgba(255, 182, 91, 0.2);
@@ -1860,7 +1863,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b8ac7', end
 
 .skin_green .header .lotterys a span {
 	width: 117px;
-	background: url(./images/blue/nav_shuxian.png) no-repeat right 12px;
+	background: url('@/assets/lhc/css/index/images/blue/nav_shuxian.png') no-repeat right 12px;
 }
 
 .skin_green .more_game {
@@ -1987,7 +1990,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b8ac7', end
 }
 
 .skin_green .ui-dialog-icon,.skin_green .ui-dialog-titlebar-close {
-	background-image: url("./images/blue/btn.png");
+	background-image: url("@/assets/lhc/css/index/images/blue/btn.png");
 }
 
 .skin_green .ui-dialog-content {
@@ -2088,7 +2091,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b8ac7', end
 
 .new-game-item {
 	display: inline-block;
-	background: url("./images/newcardgames.png") !important;
+	background: url("@/assets/lhc/css/index/images/newcardgames.png") !important;
 	background-size: 100% 2300% !important;
 	background-repeat: no-repeat !important;
 	overflow: hidden;
