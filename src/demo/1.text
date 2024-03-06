@@ -1,0 +1,26 @@
+@/assets/user/images/default/cursor.cur
+@/assets/user/images/side_lg_logo.png
+@/assets/user/images/side_xs_logo.png
+@/assets/user/images/side_sm_logo.png
+
+
+backend
+
+
+演示站我部署在27.124.4.82这台服务器了，
+地址是 https://sgwin.bitsro.xyz/user.php
+账号jituan
+密码jituan
+
+
+https://dsn6330.com/
+
+http://chat.df168app.cn/uxj/login.php
+账号dubah2
+密码Aa123456
+
+
+尝试了下直接用原来php代码转vue难度比较大，
+因为模版是没渲染过的代码也有点乱。
+我现在有点没明白的是咱们需求是按照 https://sgwin.bitsro.xyz/user.php 
+演示站原封不动的复制一个还是怎样，我了解清楚这些也好做规划
