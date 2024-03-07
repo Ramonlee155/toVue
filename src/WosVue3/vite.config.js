@@ -22,7 +22,6 @@ const pathSrc = resolve(__dirname, "src");
 // https://vitejs.dev/config/
 export default defineConfig({
     // 基本路径
-    lintOnSave: false,
     base: './',
     resolve: {
       alias: {
@@ -131,6 +130,7 @@ export default defineConfig({
             }
             return `${extType}/[name].[hash].[ext]`;
           },
+          // strict:false,
         },
       },
     },
@@ -143,5 +143,8 @@ export default defineConfig({
         `,
       },
     }
+  },
+  optimizeDeps: {
+    include: ['jquery']
   }
 })

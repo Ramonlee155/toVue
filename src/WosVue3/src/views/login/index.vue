@@ -34,7 +34,10 @@
     </div>
 </template>
   <script setup>
-  import { ref, reactive } from "vue";
+  import { reactive, ref,onMounted,getCurrentInstance } from 'vue'
+  import { useRoute,useRouter } from "vue-router";
+  let { proxy } = getCurrentInstance()
+  const router = useRouter();
   const verifyImg = ref(new URL(`@/assets/images/user/imgcode.jpg`, import.meta.url).href);
   const flagType = ref("password");
   const flag = ref(true);
@@ -79,14 +82,15 @@
     }
 
   const submitForm = async () => {
-    if (!ruleFormRef) return;
-    ruleFormRef.value.validate((valid) => {
-      if (valid) {
-        console.log("submit!");
-      } else {
-        return false;
-      }
-    });
+    router.push({name:"agreement"})
+    // if (!ruleFormRef) return;
+    // ruleFormRef.value.validate((valid) => {
+    //   if (valid) {
+    //     console.log("submit!");
+    //   } else {
+    //     return false;
+    //   }
+    // });
   };
    
   </script>

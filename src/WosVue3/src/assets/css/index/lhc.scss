@@ -1,0 +1,504 @@
+body,.skin_blue,.skin_blue #main {
+    background: none;
+}
+#header, #main, #side, .frame, #footer{
+    width: auto;
+}
+#footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+.hide { display: none}
+
+.skin_lhc .lottery_body { width: 90%}
+.skin_lhc .top .menu {
+    height: 74px;
+    background: url(@/assets/images/top_mid.gif) repeat-x left top;
+    width: 100%;
+}
+.skin_lhc .header .menu1{
+    width: 250px;
+}
+
+.skin_lhc .header .menu {
+    color: #854c00;
+}
+.menu1 .draw_number div{
+    display: inline-block;
+    padding-right: 10px;
+}
+.frame {
+    left: 250px;
+    background: none;
+}
+.logo span {
+    color: #854c00;
+}
+.skin_lhc .header .menu2 a{
+    width: auto;
+}
+.skin_lhc .header .menu a {
+    color: #854c00;
+}
+.skin_lhc .header .menu a:hover, .header .menu .selected{
+    color: #ff5000;
+}
+.skin_lhc  #header {height: 110px;}
+.skin_lhc #main{ top: 110px; background: none; overflow: auto; }
+
+.skin_lhc .header .menu2 {
+    float: right;
+    color: #854c00;
+    margin: 10px 8px 0;
+}
+
+
+.skin_lhc #side {
+    position: relative;
+    top: 30px;
+    margin: 0 0px 0px 0;
+    padding:0  20px 20px 0;
+    right: auto;
+    width: 232px;
+    background-color: #ffffff;
+
+}
+
+.skin_lhc .side_left .title {
+    background: url(@/assets/images/th_bg.gif) repeat-x left top;
+    width: 100%;
+    width: 232px;
+    border: 1px solid #dac89f;
+    color: #1b4075;
+}
+
+.skin_lhc .zhanghu {
+    background-color: #fff;
+    border: 1px solid #dac89f;
+    border-top: 0;
+    width: 232px;
+    margin: 0 auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.skin_lhc  .betdone {
+    width: 232px;
+}
+.skin_lhc .side_left .info{
+    border-bottom: 1px solid #dac89f;
+    text-align: center;
+}
+.skin_lhc .side_left .info label{
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    border-right: 1px solid #dac89f;
+}
+
+.skin_lhc .side_left .info span{
+    display: inline-block;
+    width: 49%;
+}
+.skin_lhc .side_left #lastBets { margin: 0}
+.skin_lhc .side_left #lastBets tr td {
+    height: 26px ;
+    line-height: 26px;
+    text-align: center;
+}
+
+.skin_lhc .side_left .user_info{
+    overflow: visible;
+}
+.skin_lhc .header .sub {
+    height: 31px;
+    background: #FCF9F8;
+    border-top: 1px solid #dec2b2;
+    border-bottom: 1px solid #dec2b2;
+    width: 100%;
+}
+.skin_lhc .catadiv .selected , .catadiv a:hover{
+    height: 18px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff;
+    margin-right: 2px;
+    padding: 3px 15px 3px 15px;
+    background-color: #ff5000;
+    text-decoration: none;
+    border-top: 1px solid #FFFFFF;
+    border-left: 1px solid #FFFFFF;
+    border-bottom: 1px solid #327AAC;
+    border-right: 1px solid #327AAC;
+    cursor: pointer;
+
+}
+.skin_lhc .catadiv a {
+    float: left;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    list-style-type: none;
+    margin-right: 2px;
+    padding: 3px 15px 3px 15px;
+    color: #6C2C08;
+    background-color: #FFF1BF;
+    text-decoration: none;
+    border-top: 1px solid #FFFFFF;
+    border-left: 1px solid #FFFFFF;
+    border-bottom: 1px solid #327AAC;
+    border-right: 1px solid #327AAC;
+    cursor: pointer;
+}
+.skin_lhc .catadiv a:hover{
+
+}
+
+.skin_lhc .table_list td {
+    border-bottom: 1px solid #dac89f;
+    border-right: 1px solid #dac89f;
+    text-align: center;
+}
+
+#footer {
+    background: url(@/assets/images/m_bot_bg01.gif) repeat-x left top;
+    border-left: 1px solid #dec2b2;
+    border-bottom: 1px solid #dec2b2;
+    text-align: center;
+    height: 27px;
+    line-height: 27px;
+    font-weight: bold;
+
+}
+
+.header .sub > div:not(#sub_HK6), .header .sub > div:not(#sub_HK6JSC) {
+    padding-left: 250px;
+}
+
+.skin_lhc table thead th, .skin_lhc table .head th {
+    background: url(@/assets/images/th_bg.gif) repeat-x left top;
+    border: 1px solid #dac89f;
+    color: #1b4075;
+
+    font-weight: bold;
+    height: 28px;
+}
+.skin_blue .lottery_info {
+    background: url(@/assets/images/th_bg.gif) repeat-x left top;
+    border: 1px solid #dac89f;
+    height: 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.menu2 .toplink { text-align: right;}
+.menu2 #result_balls{
+    margin: 10px 150px 0 0 ;
+}
+
+.menu2 #result_balls b.a {
+    float: left;
+    width: 23px;
+    height: 23px;
+    line-height: 22px;
+    text-align: center;
+    display: inline-block;
+    font-size: 12px;
+    color: #fff;
+
+}
+.menu2 #result_balls span.a {
+    /*display: inline-block;*/
+    display: block;
+    float: left;
+    width: 7px;
+    height: 27px;
+    line-height: 27px;
+    margin-left:5px;
+}
+
+.menu2 #result_balls span.plus{
+    margin-left: 10px;
+    width: 9px;
+    height: 27px;
+    line-height: 27px;
+    display: inline-block;
+    position: relative;
+    top: -10px;
+}
+
+
+.menu2 .T100 span{margin-left:10px;  width: 49px;  height: 27px;  display: inline-block; }
+
+.table_ball .balls .b01, .table_ball .name .b01, #drawInfo .balls .b01 ,.menu2 .T100 .b01 {	background: url("@/assets/images/hb.png") no-repeat ;background-size:23px 23px;}
+.table_ball .balls .b02, .table_ball .name .b02, #drawInfo .balls .b02 ,.menu2 .T100 .b02 {	background: url("@/assets/images/hb.png") no-repeat ;background-size:23px 23px;}
+.table_ball .balls .b03, .table_ball .name .b03, #drawInfo .balls .b03 ,.menu2 .T100 .b03 {	background: url("@/assets/images/nb.png") no-repeat ;background-size:23px 23px;}
+.table_ball .balls .b04, .table_ball .name .b04, #drawInfo .balls .b04 ,.menu2 .T100 .b04 {	background: url("@/assets/images/nb.png") no-repeat ;background-size:23px 23px;}
+.table_ball .balls .b05, .table_ball .name .b05, #drawInfo .balls .b05 ,.menu2 .T100 .b05 {	background: url("@/assets/images/lb.png") no-repeat ;background-size:23px 23px;}
+.table_ball .balls .b06, .table_ball .name .b06, #drawInfo .balls .b06 ,.menu2 .T100 .b06 {	background: url("@/assets/images/lb.png") no-repeat ;background-size:23px 23px;}
+.table_ball .balls .b07, .table_ball .name .b07, #drawInfo .balls .b07 ,.menu2 .T100 .b07 {	background: url("@/assets/images/hb.png") no-repeat ;background-size:23px 23px;}
+.table_ball .balls .b08, .table_ball .name .b08, #drawInfo .balls .b08 ,.menu2 .T100 .b08 {	background: url("@/assets/images/hb.png") no-repeat ;background-size:23px 23px;}
+.table_ball .balls .b09, .table_ball .name .b09, #drawInfo .balls .b09 ,.menu2 .T100 .b09 {	background: url("@/assets/images/nb.png") no-repeat ;background-size:23px 23px;}
+.table_ball .balls .b10, .table_ball .name .b10, #drawInfo .balls .b10 ,.menu2 .T100 .b10 {	background: url("@/assets/images/nb.png") no-repeat ;background-size:23px 23px;}
+.table_ball .balls .b11, .table_ball .name .b11, #drawInfo .balls .b11 ,.menu2 .T100 .b11 {	background: url("@/assets/images/lb.png") no-repeat ;background-size:23px 23px;}
+.table_ball .balls .b12, .table_ball .name .b12, #drawInfo .balls .b12 ,.menu2 .T100 .b12 {	background: url("@/assets/images/hb.png") no-repeat ;background-size:23px 23px;}
+.table_ball .balls .b13, .table_ball .name .b13, #drawInfo .balls .b13 ,.menu2 .T100 .b13 {	background: url("@/assets/images/hb.png") no-repeat ;background-size:23px 23px;}
+.table_ball .balls .b14, .table_ball .name .b14, #drawInfo .balls .b14 ,.menu2 .T100 .b14 {	background: url("@/assets/images/nb.png") no-repeat ;background-size:23px 23px;}
+.table_ball .balls .b15, .table_ball .name .b15, #drawInfo .balls .b15 ,.menu2 .T100 .b15 {	background: url("@/assets/images/nb.png") no-repeat ;background-size:23px 23px;}
+.table_ball .balls .b16, .table_ball .name .b16, #drawInfo .balls .b16 ,.menu2 .T100 .b16 {	background: url("@/assets/images/lb.png") no-repeat ;background-size:23px 23px;}
+.table_ball .balls .b17, .table_ball .name .b17, #drawInfo .balls .b17 ,.menu2 .T100 .b17 {	background: url("@/assets/images/lb.png") no-repeat ;background-size:23px 23px;}
+.table_ball .balls .b18, .table_ball .name .b18, #drawInfo .balls .b18 ,.menu2 .T100 .b18 {	background: url("@/assets/images/hb.png") no-repeat ;background-size:23px 23px;}
+.table_ball .balls .b19, .table_ball .name .b19, #drawInfo .balls .b19 ,.menu2 .T100 .b19 {	background: url("@/assets/images/hb.png") no-repeat ;background-size:23px 23px;}
+.table_ball .balls .b20, .table_ball .name .b20, #drawInfo .balls .b20 ,.menu2 .T100 .b20 {	background: url("@/assets/images/nb.png") no-repeat ;background-size:23px 23px;}
+.table_ball .balls .b21, .table_ball .name .b21, #drawInfo .balls .b21 ,.menu2 .T100 .b21 {	background: url("@/assets/images/lb.png") no-repeat ;background-size:23px 23px;}
+.table_ball .balls .b22, .table_ball .name .b22, #drawInfo .balls .b22 ,.menu2 .T100 .b22 {	background: url("@/assets/images/lb.png") no-repeat ;background-size:23px 23px;}
+.table_ball .balls .b23, .table_ball .name .b23, #drawInfo .balls .b23 ,.menu2 .T100 .b23 {	background: url("@/assets/images/hb.png") no-repeat ;background-size:23px 23px;}
+.table_ball .balls .b24, .table_ball .name .b24, #drawInfo .balls .b24 ,.menu2 .T100 .b24 {	background: url("@/assets/images/hb.png") no-repeat ;background-size:23px 23px;}
+.table_ball .balls .b25, .table_ball .name .b25, #drawInfo .balls .b25 ,.menu2 .T100 .b25 {	background: url("@/assets/images/nb.png") no-repeat ;background-size:23px 23px;}
+.table_ball .balls .b26, .table_ball .name .b26, #drawInfo .balls .b26 ,.menu2 .T100 .b26 {	background: url("@/assets/images/nb.png") no-repeat ;background-size:23px 23px;}
+.table_ball .balls .b27, .table_ball .name .b27, #drawInfo .balls .b27 ,.menu2 .T100 .b27 {	background: url("@/assets/images/lb.png") no-repeat ;background-size:23px 23px;}
+.table_ball .balls .b28, .table_ball .name .b28, #drawInfo .balls .b28 ,.menu2 .T100 .b28 {	background: url("@/assets/images/lb.png") no-repeat ;background-size:23px 23px;}
+.table_ball .balls .b29, .table_ball .name .b29, #drawInfo .balls .b29 ,.menu2 .T100 .b29 {	background: url("@/assets/images/hb.png") no-repeat ;background-size:23px 23px;}
+.table_ball .balls .b30, .table_ball .name .b30, #drawInfo .balls .b30 ,.menu2 .T100 .b30 {	background: url("@/assets/images/hb.png") no-repeat ;background-size:23px 23px;}
+.table_ball .balls .b31, .table_ball .name .b31, #drawInfo .balls .b31 ,.menu2 .T100 .b31 {	background: url("@/assets/images/nb.png") no-repeat ;background-size:23px 23px;}
+.table_ball .balls .b32, .table_ball .name .b32, #drawInfo .balls .b32 ,.menu2 .T100 .b32 {	background: url("@/assets/images/lb.png") no-repeat ;background-size:23px 23px;}
+.table_ball .balls .b33, .table_ball .name .b33, #drawInfo .balls .b33 ,.menu2 .T100 .b33 {	background: url("@/assets/images/lb.png") no-repeat ;background-size:23px 23px;}
+.table_ball .balls .b34, .table_ball .name .b34, #drawInfo .balls .b34 ,.menu2 .T100 .b34 {	background: url("@/assets/images/hb.png") no-repeat ;background-size:23px 23px;}
+.table_ball .balls .b35, .table_ball .name .b35, #drawInfo .balls .b35 ,.menu2 .T100 .b35 {	background: url("@/assets/images/hb.png") no-repeat ;background-size:23px 23px;}
+.table_ball .balls .b36, .table_ball .name .b36, #drawInfo .balls .b36 ,.menu2 .T100 .b36 {	background: url("@/assets/images/nb.png") no-repeat ;background-size:23px 23px;}
+.table_ball .balls .b37, .table_ball .name .b37, #drawInfo .balls .b37 ,.menu2 .T100 .b37 {	background: url("@/assets/images/nb.png") no-repeat ;background-size:23px 23px;}
+.table_ball .balls .b38, .table_ball .name .b38, #drawInfo .balls .b38 ,.menu2 .T100 .b38 {	background: url("@/assets/images/lb.png") no-repeat ;background-size:23px 23px;}
+.table_ball .balls .b39, .table_ball .name .b39, #drawInfo .balls .b39 ,.menu2 .T100 .b39 {	background: url("@/assets/images/lb.png") no-repeat ;background-size:23px 23px;}
+.table_ball .balls .b40, .table_ball .name .b40, #drawInfo .balls .b40 ,.menu2 .T100 .b40 {	background: url("@/assets/images/hb.png") no-repeat ;background-size:23px 23px;}
+.table_ball .balls .b41, .table_ball .name .b41, #drawInfo .balls .b41 ,.menu2 .T100 .b41 {	background: url("@/assets/images/nb.png") no-repeat ;background-size:23px 23px;}
+.table_ball .balls .b42, .table_ball .name .b42, #drawInfo .balls .b42 ,.menu2 .T100 .b42 {	background: url("@/assets/images/nb.png") no-repeat ;background-size:23px 23px;}
+.table_ball .balls .b43, .table_ball .name .b43, #drawInfo .balls .b43 ,.menu2 .T100 .b43 {	background: url("@/assets/images/lb.png") no-repeat ;background-size:23px 23px;}
+.table_ball .balls .b44, .table_ball .name .b44, #drawInfo .balls .b44 ,.menu2 .T100 .b44 {	background: url("@/assets/images/lb.png") no-repeat ;background-size:23px 23px;}
+.table_ball .balls .b45, .table_ball .name .b45, #drawInfo .balls .b45 ,.menu2 .T100 .b45 {	background: url("@/assets/images/hb.png") no-repeat ;background-size:23px 23px;}
+.table_ball .balls .b46, .table_ball .name .b46, #drawInfo .balls .b46 ,.menu2 .T100 .b46 {	background: url("@/assets/images/hb.png") no-repeat ;background-size:23px 23px;}
+.table_ball .balls .b47, .table_ball .name .b47, #drawInfo .balls .b47 ,.menu2 .T100 .b47 {	background: url("@/assets/images/nb.png") no-repeat ;background-size:23px 23px;}
+.table_ball .balls .b48, .table_ball .name .b48, #drawInfo .balls .b48 ,.menu2 .T100 .b48 {	background: url("@/assets/images/nb.png") no-repeat ;background-size:23px 23px;}
+.table_ball .balls .b49, .table_ball .name .b49, #drawInfo .balls .b49 ,.menu2 .T100 .b49 {	background: url("@/assets/images/lb.png") no-repeat ;background-size:23px 23px;}
+
+.red  {color: #ff0000!important;}
+.blue {color: #0066ff!important;}
+.green{color: #00af00!important;}
+
+.skin_lhc .table_ball .name { width: auto;}
+.skin_lhc .table_ball .odds {width: auto;}
+.table_ball .balls span, .table_ball .name span, #drawInfo .balls b {
+    width: 23px;
+    height: 23px;
+    line-height: 22px;
+    text-align: center;
+    display: inline-block;
+    font-size: 12px;
+    color: #fff;
+    margin: 2px 0 0 5px;
+    text-indent: 0 ;
+    font-weight: bold;
+}
+
+
+.skin_lhc .tab_title02 a:hover, .skin_lhc .tab_title02 .on {
+    background: linear-gradient(to bottom, #ff8d52 0%, #ff692a 100%);
+    font-weight: bold;
+    color: #ffffff;
+    border: 1px solid #af8300;
+}
+
+
+
+.skin_lhc .control .button {
+    background: linear-gradient(to bottom, #f1f1f1 0%, #e2e2e2 100%);
+    BORDER: 1px solid #af8300;
+    PADDING-RIGHT: 2px;
+    PADDING-LEFT: 2px;
+    CURSOR: pointer;
+    PADDING-TOP: 2px;
+
+    font-size: 13px;
+    color: #6C2C08;
+    height: 25px;
+    line-height: 21px;
+    width: 60px;
+    margin: 8px 0 0 8px;
+    border-radius: 3px;
+}
+
+.skin_lhc .bet_panel .name {
+    background: none repeat 0 0 #FCF9F8;
+}
+
+.skin_lhc .control{
+    color: #6C2C08;
+}
+.skin_blue .color_lv {
+    color: #6C2C08;
+    position: relative;
+}
+
+.skin_lhc .bet_panel .hover, .skin_lhc .bet_panel .close .hover {
+    background: none repeat 0 0 #FCF9F8;
+}
+.skin_lhc table, .skin_lhc table th, .skin_lhc table td{
+    border-color: #dac89f;
+}
+
+
+.skin_lhc .table tfoot tr {
+    background: none repeat 0 0 #FCF9F8;
+}
+.skin_lhc .list .hover {
+    background: #E8E5EB;
+}
+
+.skin_lhc .game_class a:hover,.skin_lhc .game_class a.selected {
+    color: white;
+    background: linear-gradient(to bottom, #ff8d52 0%, #ff692a 100%);
+    border-radius: 5px 5px 0 0;
+    text-shadow: 1px 1px 0 #ad3b4e;
+}
+
+.skin_lhc .game_class {
+    background: none;
+    border: none;
+}
+
+
+.skin_lhc table.lottery_body ,.skin_lhc table.lottery_body .noborder {
+    border: none;
+}
+
+.skin_lhc .lottery_info{
+    width: 100%;
+}
+.skin_lhc #quick_sec_table table {
+    float: none;
+    width: 232px;
+    text-align: center;
+
+}
+.skin_lhc #quick_sec_table td {
+    cursor: pointer;
+    height: 27px
+}
+
+.skin_lhc #quick_sec_table .hover {
+    color: #f00
+}
+
+.skin_lhc #quick_sec_table .on {
+    color: #f00;
+    background: none repeat 0 0 #ffc214
+}
+
+.skin_lhc #quick_sec_table .button{
+    background: linear-gradient(to bottom, #f1f1f1 0%, #e2e2e2 100%);
+    BORDER: 1px solid #af8300;
+    padding: 1px 2px;
+    margin-left: 3px;
+}
+.skin_lhc .ui-dialog {
+    border: 5px solid #dac89f;
+    background: white;
+}
+
+.skin_lhc .ui-dialog-buttonset .ui-button {
+    background: linear-gradient(to bottom, #f1f1f1 0%, #e2e2e2 100%);
+    BORDER: 1px solid #af8300;
+    width: 66px;
+    height: 25px;
+    line-height: 25px;
+    margin-right: 5px;
+    color: #6C2C08;
+    letter-spacing: 3px;
+}
+.skin_lhc  .ui-dialog-titlebar {
+    background:#e2e2e2  ;
+}
+.skin_lhc  .tab{
+    margin: 0;
+    height: 30px;
+
+}
+.skin_lhc .tab_title02{
+    padding-top: 2px;
+    height: 24px;
+}
+.skin_lhc  .tab a{
+    background: linear-gradient(to bottom, #f1f1f1 0%, #e2e2e2 100%);
+    BORDER: 1px solid #af8300;
+    width: 60px;
+    height: 24px;
+    line-height:24px;
+    border-radius: 5px ;
+    font-weight: 100;
+}
+.skin_lhc  .tab a.on , .skin_lhc  .tab a:hover{
+    background: linear-gradient(to bottom, #ff8d52 0%, #ff692a 100%);
+    BORDER: 1px solid #af8300;
+    width: 60px;
+    height: 24px;
+    line-height:24px;
+}
+.skin_lhc  #lastBets .bets {
+    margin: 0;
+    border-left: 1px solid #dac89f;
+    border-right: 1px solid #dac89f;
+    border-bottom: 1px solid #dac89f;
+}
+.skin_lhc .lottery_info_left .button {
+    background: linear-gradient(to bottom, #f1f1f1 0%, #e2e2e2 100%);
+    BORDER: 1px solid #af8300;
+    PADDING: 2px 2px 0 2px;
+    CURSOR: pointer;
+    font-size: 13px;
+    color: #6C2C08;
+    height: 23px;
+    line-height: 21px;
+    width: 65px;
+    margin: 3px 0 0 0;
+    border-radius: 3px;
+}
+.skin_lhc .lottery_info_left .button:hover{
+    background: linear-gradient(to bottom, #ff8d52 0%, #ff692a 100%);
+    color: #ffffff;
+}
+.skin_lhc .fasttb .selected ,.skin_lhc .bet_panel .selected  {
+    background: rgb(255, 255, 102);
+}
+
+.skin_lhc .quick_table{
+    background: url(@/assets/images/m_bot_bg.gif) repeat-x left bottom;
+    border: 1px solid #dec2b2;
+}
+
+.skin_lhc .quick_table tfoot tr td {
+    border: none;
+    height: 36px;
+    line-height: 36px;
+}
+.skin_lhc .quick_table tfoot tr td.left {
+    text-align: left;
+}
+.skin_lhc .quick_table tfoot tr td.left input{
+    max-width: 52px;
+    border: #d8c28a 1px solid;
+    padding: 2px;
+    background: #fcfaeb;
+}
+.skin_lhc .quick_table tfoot tr td.left input[type="checkbox"] {
+    background-color: initial;
+    cursor: default;
+    appearance: auto;
+    box-sizing: border-box;
+    margin: 3px 3px 3px 4px;
+    padding: initial;
+    border: initial;
+}
+
+.skin_lhc  .textnr { margin: 10px 0;}

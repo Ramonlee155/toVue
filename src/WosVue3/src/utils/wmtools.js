@@ -24,7 +24,7 @@ export function loadCSS(url,isCache=false) {
    * })
    * var that = this; 在方法里面使用that
    */
-  export function loadJS(jsUrl, callback,isCache = false) {
+  export function loadJs(jsUrl, callback,isCache = false) {
     var script = document.createElement('script');
     var head = document.head;
     script.type = 'text/JavaScript';
@@ -40,7 +40,7 @@ export function loadCSS(url,isCache=false) {
   }
 
 //   使用方法
-//   import { loadJS } from "@/utils/wmtools"
-// loadJS("xxxx.js", function () {
+//   import { loadJs } from "@/utils/wmtools"
+// loadJs("xxxx.js", function () {
 //    console.log("加载成功")
 // });

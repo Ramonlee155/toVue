@@ -15,36 +15,28 @@ const router = createRouter({
         component: () => import('@/views/login/index.vue'),
     },
     {
-      path: '/member/agreement',
+      path: '/agreement',
       name: 'agreement',
       meta: {
           title: '用户协议'
       },
-      component: () => import('@/views/member/agreement/index.vue'),
+      component: () => import('@/views/agreement/index.vue'),
   },
-  {
-    path: '/member/index',
-    name: 'memberIndex',
-    meta: {
-        title: '独霸'
-    },
-    component: () => import('@/views/member/index.vue'),
-},
-//     {
-//       path: '/',
-//       component: () => import('@/views/layout/index.vue'),
-//       children:[
-//         {
+    {
+      path: '/',
+      component: () => import('@/views/layout/index.vue'),
+      children:[
+        {
 
-//           path: '/home',
-//           name: 'home',
-//           meta: {
-//               title: '首页'
-//           },
-//           component: () => import('@/views/home/index.vue'),
-//         },
-//       ],
-//   }
+          path: '/member/index',
+          name: 'member',
+          meta: {
+              title: '首页'
+          },
+          component: () => import('@/views/member/index.vue'),
+        },
+      ],
+  }
 
   ]
 })
