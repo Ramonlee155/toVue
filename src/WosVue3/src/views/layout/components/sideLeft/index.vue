@@ -27,7 +27,7 @@
             </div>
         </div>
         <!--下注单信息-->
-        <div  id="lastBets" style="display: none">
+        <div  id="lastBets" style="display: none;">
             <table class="table last15">
                 <tbody>
                 <tr><td>时间</td><td>金额</td><td>内容</td></tr>
@@ -185,11 +185,11 @@
 
                 </tr>
                 <tr class="kz">
-                    <td colspan="6">
+                    <td colspan="6" class="quick_btns">
                         <span class="color_lv bold">金额</span> 
                         <input class="zje" style="width: 60px;" />
                         <input type="button" class="exe button" value="确定" @click="handPlaceOrderClick"/>
-                    <input type="button" class="back button" value="返回" @click="handQuickModeReturnClick"/>
+                        <input type="button" class="back button" value="返回" @click="handQuickModeReturnClick"/>
                         <input type="button" class="button cancel" style="display: none" value="返回"  />
                     </td>
                 </tr>
@@ -197,8 +197,7 @@
             </table>
         </div>
 
-        <div style="display:none" id="betResultPanel">
-
+        <div id="betResultPanel">
             <div class="control s0">
                 <a onclick="resetPanel()" href="javascript:void(0)">返 回</a>
             </div>
@@ -211,8 +210,6 @@
                     </tbody></table>
             </div>
         </div>
-
-
     </div>
 </template>
 
@@ -692,242 +689,157 @@ function colorm(m) {
 </script>
 <style type="scss" scoped>
 .skin_lhc #side {
-    position: relative;
-    top: 30px;
-    margin: 0 0px 0px 0;
-    padding: 0 20px 20px 0;
-    right: auto;
     width: 232px;
-    background-color: #ffffff;
+    ul {
+            list-style: none outside none;
+            margin: 0;
+            padding: 0;
+    }
+    .user_info {
+        overflow: visible;
+        .title{
+            text-indent: 6px;
+        } 
+        .zhanghu {
+            background-color: #fff;
+            border: 1px solid #dac89f;
+            border-top: 0;
+            width: 232px;
+            margin: 0 auto;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            .info {
+                border-bottom: 1px solid #dac89f;
+                text-align: center;
+                clear: both;
+                overflow: hidden;
+                label {
+                    display: inline-block;
+                    width: 50%;
+                    text-align: center;
+                    border-right: 1px solid #dac89f;
+                    color: #8e8e8e;
+                }
+
+                span,label {
+                    display: block;
+                    float: left;
+                    height: 22px;
+                    line-height: 24px;
+                    text-indent: 10px;
+                }
+
+                span {
+                    display: inline-block;
+                    width: 49%;
+                    color: #c03d50;
+                }
+            }
+        }
+    }
+    .title {
+        background: url(@/assets/images/th_bg.gif) repeat-x left top;
+        color: #1b4075;
+        font-weight: bold;
+        height: 30px;
+        line-height: 30px;
+        box-sizing: border-box;
+    }
+
+    #lastBets {
+        margin: 0;
+        tr td {
+            height: 26px;
+            line-height: 26px;
+            text-align: center;
+        }
+    }
+    #betsBox{
+        .betList {
+            max-height: 300px;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+        table {
+            text-align: center;
+        }
+    }
+
+    #quick_sec_table table {
+        float: none;
+        width: 232px;
+        text-align: center;
+        td {
+            cursor: pointer;
+            height: 27px;
+        }
+
+        .quick_btns input{
+            margin:0 3px;
+        }
+    }
+
+    #betResultPanel {
+        color: black;
+        .control {
+            background: white;
+            text-align: center;
+            height: 25px;
+            border: 1px solid;
+            a {
+                background: url(@/assets/images/red/btn-bg.png) repeat-x;
+                width: 66px;
+                height: 18px;
+                line-height: 18px;
+                color: #fff;
+                display: inline-block;
+                margin-top: 4px;
+            }
+        }
+        .Paneltitle {
+            height: 35px;
+            line-height: 35px;
+            border: 1px solid;
+            font-weight: bold;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .bresults {
+            max-height: 367px;
+            overflow: auto;
+            .bets {
+                text-indent: 5px;
+                border-left: 1px solid;
+                border-right: 1px solid;
+                border-top: 1px solid;
+            }
+        }
+    }
 }
 
-.skin_lhc .side_left .user_info {
-    overflow: visible;
-}
-
-.skin_lhc .side_left .title {
-    background: url(/images/th_bg.gif) repeat-x left top;
-    width: 100%;
-    width: 232px;
-    border: 1px solid #dac89f;
-    color: #1b4075;
-
-    font-weight: bold;
-    height: 30px;
-    line-height: 30px;
-
-    margin: 4px auto 0;
-
-    padding-left: 10px;
-
-    box-sizing: border-box;
-}
-
-.skin_lhc .zhanghu {
-    background-color: #fff;
-    border: 1px solid #dac89f;
-    border-top: 0;
-    width: 232px;
-    margin: 0 auto;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-.skin_lhc .side_left .info {
-    border-bottom: 1px solid #dac89f;
-    text-align: center;
-}
-
-.side_left .info {
-    clear: both;
-    overflow: hidden;
-}
-
-.skin_lhc .side_left .info label {
-    display: inline-block;
-    width: 50%;
-    text-align: center;
-    border-right: 1px solid #dac89f;
-    color: #8e8e8e;
-}
-
-.side_left .info span, .side_left .info label {
-    display: block;
-    float: left;
-    height: 22px;
-    line-height: 24px;
-    text-indent: 10px;
-}
-
-.skin_lhc .side_left .info span {
-    display: inline-block;
-    width: 49%;
-}
-
-.side_left .info span {
-    color: #c03d50;
-}
-
-.side_left .info span, .side_left .info label {
-    display: block;
-    float: left;
-    height: 22px;
-    line-height: 24px;
-    text-indent: 10px;
-}
-
-
-.skin_lhc .side_left #lastBets {
-    margin: 0;
-}
-
-.skin_lhc table, .skin_lhc table th, .skin_lhc table td {
-    border-color: #dac89f;
-}
-
-.table {
-    word-wrap: break-word;
-    width: 100%;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-.skin_lhc .side_left #lastBets tr td {
-    height: 26px;
-    line-height: 26px;
-    text-align: center;
-}
-
-.skin_lhc table, .skin_lhc table th, .skin_lhc table td {
-    border-color: #dac89f;
-}
-table td, table th {
-    border: 1px solid;
-    padding: 0;
-}
-
-
-.skin_lhc .side_left .title {
-    background: url(/images/th_bg.gif) repeat-x left top;
-    width: 100%;
-    width: 232px;
-    border: 1px solid #dac89f;
-    color: #1b4075;
-}
-
-#betsBox .betList {
-    max-height: 300px;
-    overflow-x: hidden;
-    overflow-y: auto;
-}
-
-#betsBox table {
-    text-align: center;
-}
-
-.skin_lhc .table tfoot tr {
-    background: none repeat 0 0 #FCF9F8;
-}
-
-#bcount {
-    width: 127px;
-    border-right: 1px solid;
-}
-
-#btotal {
-    width: 254px;
-}
 
 .ui-dialog-buttonset {
     border: 1px solid white;
     text-align: center;
     padding: 8px 0;
-}
-
-.skin_lhc .ui-dialog-buttonset .ui-button {
-    background: linear-gradient(to bottom, #f1f1f1 0%, #e2e2e2 100%);
-    BORDER: 1px solid #af8300;
-    width: 66px;
-    height: 25px;
-    line-height: 25px;
-    margin-right: 5px;
-    color: #6C2C08;
-    letter-spacing: 3px;
-}
-
-.ui-dialog-buttonset .ui-button {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-.skin_lhc #quick_sec_table table {
-    float: none;
-    width: 232px;
-    text-align: center;
-}
-
-.skin_lhc table, .skin_lhc table th, .skin_lhc table td {
-    border-color: #dac89f;
-}
-
-.skin_lhc #quick_sec_table td {
-    cursor: pointer;
-    height: 27px;
-}
-
-#betResultPanel {
-    color: black;
+    .ui-button {
+        background: linear-gradient(to bottom, #f1f1f1 0%, #e2e2e2 100%);
+        BORDER: 1px solid #af8300;
+        width: 66px;
+        height: 25px;
+        line-height: 25px;
+        margin-right: 5px;
+        color: #6C2C08;
+        letter-spacing: 3px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
 }
 
 .skin_lhc .control {
     color: #6C2C08;
-}
-
-.side_left .control {
-    background: white;
-    text-align: center;
-    height: 25px;
-    border: 1px solid;
-}
-
-.side_left .control a {
-    background: url(./images/red/btn-bg.png) repeat-x;
-    width: 66px;
-    height: 18px;
-    line-height: 18px;
-    color: #fff;
-    display: inline-block;
-    margin-top: 4px;
-}
-
-#betResultPanel .Paneltitle {
-    height: 35px;
-    line-height: 35px;
-    border: 1px solid;
-    font-weight: bold;
-    text-align: center;
-    font-size: 14px;
-}
-
-#betResultPanel .bresults {
-    max-height: 367px;
-    overflow: auto;
-}
-
-#betResultPanel .bets {
-    text-indent: 5px;
-    border-left: 1px solid;
-    border-right: 1px solid;
-    border-top: 1px solid;
-}
-.side_left ul {
-    list-style: none outside none;
-    margin: 0;
-    padding: 0;
 }
 </style>

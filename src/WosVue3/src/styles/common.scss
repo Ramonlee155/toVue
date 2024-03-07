@@ -18,6 +18,34 @@ a, a:hover {
     text-decoration: none;
 } 
 
+.skin_lhc table, .skin_lhc table th, .skin_lhc table td {
+    border-color: #dac89f;
+}
+
+.table {
+    word-wrap: break-word;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    td, th {
+        border: 1px solid;
+        padding: 0;
+    }
+
+    tfoot tr {
+        background: none repeat 0 0 #FCF9F8;
+        #bcount {
+            width: 127px;
+            border-right: 1px solid;
+        }
+        
+        #btotal {
+            width: 254px;
+        }
+    }
+}
+
+
 .table_ball .balls .b01, .table_ball .name .b01, #drawInfo .balls .b01 ,.menu2 .T100 .b01 {	background: url("@/assets/images/hb.png") no-repeat ;background-size:23px 23px;}
 .table_ball .balls .b02, .table_ball .name .b02, #drawInfo .balls .b02 ,.menu2 .T100 .b02 {	background: url("@/assets/images/hb.png") no-repeat ;background-size:23px 23px;}
 .table_ball .balls .b03, .table_ball .name .b03, #drawInfo .balls .b03 ,.menu2 .T100 .b03 {	background: url("@/assets/images/nb.png") no-repeat ;background-size:23px 23px;}

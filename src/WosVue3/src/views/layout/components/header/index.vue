@@ -50,7 +50,7 @@
 </div>
 </template>
 <style type="scss" scoped>
-.skin_lhc #header {
+#header {
     height: 110px;
     .logo {
         left: 15px;

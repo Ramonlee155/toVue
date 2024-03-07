@@ -1,14 +1,15 @@
 <template>
 <!--  顶部内容 -->
 <MemberHeader></MemberHeader>
-<div id="main">
+<!-- <div id="main"> -->
+<div class="content">
         <!-- 左侧列表-->
         <MemberSideLeft></MemberSideLeft>
-    <div class="frame">
-        <!-- 主体内容  -->
-        <!-- <iframe id="frame" name="frame" frameborder="0"></iframe> -->
-        <router-view></router-view>
-    </div>
+        <div class="side-right">
+            <!-- 主体内容  -->
+            <!-- <iframe id="frame" name="frame" frameborder="0"></iframe> -->
+            <router-view></router-view>
+        </div>
 </div>
 <!-- 底部信息 -->
 <MemberFooter></MemberFooter>
@@ -62,3 +63,13 @@
 <style src="@/assets/css/default/100.scss" lang="scss"></style>
 <style src="@/assets/css/betft.scss" lang="scss"></style>
 <style src="@/assets/css/index/lhc.scss" lang="scss"></style> -->
+
+<style type="scss" scoped>
+.content{
+    display: flex;
+    margin-top: 25px;
+}
+.side-right {
+    flex: 1;
+}
+</style>
